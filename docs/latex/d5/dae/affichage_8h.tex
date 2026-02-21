@@ -1,0 +1,202 @@
+\doxysection{Référence du fichier sources/affichage.h}
+\hypertarget{affichage_8h}{}\label{affichage_8h}\index{sources/affichage.h@{sources/affichage.h}}
+
+
+Fonctions qui concernent les affichages des différentes structures, parfois en fonctions de critères.  
+
+
+{\ttfamily \#include "{}structures.\+h"{}}\newline
+Graphe des dépendances par inclusion de affichage.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{affichage_8h_a881108445da67db710995d38876c61e3}{menu\+Selection}} ()
+\begin{DoxyCompactList}\small\item\em Affiche le menu de selection entre Secretaire et \doxylink{structPraticien}{Praticien}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8h_a8fd0754e86b00b02406a6bb02f41fff5}{menu\+Secretaire}} ()
+\begin{DoxyCompactList}\small\item\em Affiche le menu de la secretarie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8h_ae1af3561ea127c7ab52b23e12d3d9205}{menu\+Praticien}} ()
+\begin{DoxyCompactList}\small\item\em Affiche le menu du praticien. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8h_a987405566748d6a75b0fc3f9c9e899c8}{affichage\+Tri\+Lex}} (\mbox{\hyperlink{structPraticien}{Praticien}} \mbox{\hyperlink{structpraticien}{praticien}})
+\begin{DoxyCompactList}\small\item\em Affiche les patients d\textquotesingle{}un praticien triés par ordre lexicographique. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8h_ace9483b9f136b21d9cbc9e778adf8c09}{affichage\+Tri\+Visite}} (\mbox{\hyperlink{structPraticien}{Praticien}} \mbox{\hyperlink{structpraticien}{praticien}})
+\begin{DoxyCompactList}\small\item\em Affiche les patients d\textquotesingle{}un praticien par ordre de visite le plus recente au plus ancien. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8h_aea8ce4661c1d5fc32cfaedf962376a79}{afficher\+PDepuis1\+Certain\+Tps}} (\mbox{\hyperlink{structDate}{Date}} d, \mbox{\hyperlink{structPraticien}{Praticien}} \mbox{\hyperlink{structpraticien}{praticien}}, \mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab\+Pat, int nb\+Patients)
+\begin{DoxyCompactList}\small\item\em Affiche la liste des patients qui ne sont pas venus depuis une date donnée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8h_ae4a792e736926b433cc7f6adc60737c5}{afficher\+Un\+Praticien}} (\mbox{\hyperlink{structPraticien}{Praticien}} \mbox{\hyperlink{structpraticien}{praticien}})
+\begin{DoxyCompactList}\small\item\em Affiche les informations d\textquotesingle{}un praticien. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8h_ac83e981a87513911b50cfc93fa638e48}{afficher\+Specialites}} (\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab\+Specialites, int nb\+Specialites)
+\begin{DoxyCompactList}\small\item\em Affiche une liste de specialites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8h_acb934086fc79c6c7694b7dbbd4f3e15d}{afficher\+Centre}} (\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab\+Specialites, int nb\+Specialites)
+\begin{DoxyCompactList}\small\item\em Affiche le centre medical. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8h_a057da21ff3ef95bd19d9ed7066a0667d}{afficher\+Praticiens\+Specialite}} (\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}specialite)
+\begin{DoxyCompactList}\small\item\em Affiche la liste des praticiens d\textquotesingle{}une spécialité qui ont de la place disponible. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonctions qui concernent les affichages des différentes structures, parfois en fonctions de critères. 
+
+\begin{DoxyAuthor}{Auteur}
+Elora LIAGRE , Ambre GUILLAUMIN-\/\+TORRES \& Shreya ANGIA 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Décembre 2025 -\/ Janvier 2026 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{affichage_8h_a987405566748d6a75b0fc3f9c9e899c8}\label{affichage_8h_a987405566748d6a75b0fc3f9c9e899c8} 
+\index{affichage.h@{affichage.h}!affichageTriLex@{affichageTriLex}}
+\index{affichageTriLex@{affichageTriLex}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{affichageTriLex()}{affichageTriLex()}}
+{\footnotesize\ttfamily void affichage\+Tri\+Lex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPraticien}{Praticien}}}]{praticien }\end{DoxyParamCaption})}
+
+
+
+Affiche les patients d\textquotesingle{}un praticien triés par ordre lexicographique. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em praticien} & Le praticien dont on veut afficher les patients \\
+\hline
+\end{DoxyParams}
+\Hypertarget{affichage_8h_ace9483b9f136b21d9cbc9e778adf8c09}\label{affichage_8h_ace9483b9f136b21d9cbc9e778adf8c09} 
+\index{affichage.h@{affichage.h}!affichageTriVisite@{affichageTriVisite}}
+\index{affichageTriVisite@{affichageTriVisite}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{affichageTriVisite()}{affichageTriVisite()}}
+{\footnotesize\ttfamily void affichage\+Tri\+Visite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPraticien}{Praticien}}}]{praticien }\end{DoxyParamCaption})}
+
+
+
+Affiche les patients d\textquotesingle{}un praticien par ordre de visite le plus recente au plus ancien. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em praticien} & Le praticien dont on veut afficher les patients \\
+\hline
+\end{DoxyParams}
+\Hypertarget{affichage_8h_acb934086fc79c6c7694b7dbbd4f3e15d}\label{affichage_8h_acb934086fc79c6c7694b7dbbd4f3e15d} 
+\index{affichage.h@{affichage.h}!afficherCentre@{afficherCentre}}
+\index{afficherCentre@{afficherCentre}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{afficherCentre()}{afficherCentre()}}
+{\footnotesize\ttfamily void afficher\+Centre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab\+Specialites,  }\item[{int}]{nb\+Specialites }\end{DoxyParamCaption})}
+
+
+
+Affiche le centre medical. 
+
+Affiche les spécialités et les praticiens qui y sont rattachés. 
+\begin{DoxyParams}{Paramètres}
+{\em tab\+Specialites} & Un tableau de \doxylink{structSpecialite}{Specialite}. \\
+\hline
+{\em nb\+Specialites} & Le nombre de spécialités dans le tableau. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{affichage_8h_aea8ce4661c1d5fc32cfaedf962376a79}\label{affichage_8h_aea8ce4661c1d5fc32cfaedf962376a79} 
+\index{affichage.h@{affichage.h}!afficherPDepuis1CertainTps@{afficherPDepuis1CertainTps}}
+\index{afficherPDepuis1CertainTps@{afficherPDepuis1CertainTps}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{afficherPDepuis1CertainTps()}{afficherPDepuis1CertainTps()}}
+{\footnotesize\ttfamily void afficher\+PDepuis1\+Certain\+Tps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDate}{Date}}}]{d,  }\item[{\mbox{\hyperlink{structPraticien}{Praticien}}}]{praticien,  }\item[{\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab\+Pat,  }\item[{int}]{nb\+Patients }\end{DoxyParamCaption})}
+
+
+
+Affiche la liste des patients qui ne sont pas venus depuis une date donnée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em d} & La date à partir de laquelle vérifier les absences \\
+\hline
+{\em praticien} & Le praticien concerné \\
+\hline
+{\em tab\+Pat} & Le tableau de patients \\
+\hline
+{\em nb\+Patients} & Le nombre de patients dans le tableau Affiche la liste des patients concernés qui sont absents depuis la date d Si aucun patient n\textquotesingle{}est absent, affiche un message l\textquotesingle{}indiquant \\
+\hline
+\end{DoxyParams}
+\Hypertarget{affichage_8h_a057da21ff3ef95bd19d9ed7066a0667d}\label{affichage_8h_a057da21ff3ef95bd19d9ed7066a0667d} 
+\index{affichage.h@{affichage.h}!afficherPraticiensSpecialite@{afficherPraticiensSpecialite}}
+\index{afficherPraticiensSpecialite@{afficherPraticiensSpecialite}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{afficherPraticiensSpecialite()}{afficherPraticiensSpecialite()}}
+{\footnotesize\ttfamily void afficher\+Praticiens\+Specialite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}}]{specialite }\end{DoxyParamCaption})}
+
+
+
+Affiche la liste des praticiens d\textquotesingle{}une spécialité qui ont de la place disponible. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em specialite} & La spécialité dont on veut afficher les praticiens.\\
+\hline
+\end{DoxyParams}
+Cette fonction affiche le nom de la spécialité, le nombre de praticiens qui ont de la place disponible et qui y sont rattachés et les informations sur ces praticiens. \Hypertarget{affichage_8h_ac83e981a87513911b50cfc93fa638e48}\label{affichage_8h_ac83e981a87513911b50cfc93fa638e48} 
+\index{affichage.h@{affichage.h}!afficherSpecialites@{afficherSpecialites}}
+\index{afficherSpecialites@{afficherSpecialites}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{afficherSpecialites()}{afficherSpecialites()}}
+{\footnotesize\ttfamily void afficher\+Specialites (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab\+Specialites,  }\item[{int}]{nb\+Specialites }\end{DoxyParamCaption})}
+
+
+
+Affiche une liste de specialites. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab\+Specialites} & tableau de pointeur sur les specialites. \\
+\hline
+{\em nb\+Specialites} & nombre de specialites dans le tableau. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{affichage_8h_ae4a792e736926b433cc7f6adc60737c5}\label{affichage_8h_ae4a792e736926b433cc7f6adc60737c5} 
+\index{affichage.h@{affichage.h}!afficherUnPraticien@{afficherUnPraticien}}
+\index{afficherUnPraticien@{afficherUnPraticien}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{afficherUnPraticien()}{afficherUnPraticien()}}
+{\footnotesize\ttfamily void afficher\+Un\+Praticien (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPraticien}{Praticien}}}]{praticien }\end{DoxyParamCaption})}
+
+
+
+Affiche les informations d\textquotesingle{}un praticien. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em praticien} & Le praticien dont on veut afficher les informations.\\
+\hline
+\end{DoxyParams}
+Cette fonction affiche le nom, le nombre de patients et le nombre max de patients du praticien. \Hypertarget{affichage_8h_ae1af3561ea127c7ab52b23e12d3d9205}\label{affichage_8h_ae1af3561ea127c7ab52b23e12d3d9205} 
+\index{affichage.h@{affichage.h}!menuPraticien@{menuPraticien}}
+\index{menuPraticien@{menuPraticien}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{menuPraticien()}{menuPraticien()}}
+{\footnotesize\ttfamily void menu\+Praticien (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Affiche le menu du praticien. 
+
+Le menu du praticien propose les options suivantes \+:
+\begin{DoxyItemize}
+\item Quitter
+\item Appeler un patient
+\item Patientèle (ordre lexicographique)
+\item Patientèle (par visite)
+\item Patients absents depuis un delai donné
+\item Faire de la place 
+\end{DoxyItemize}\Hypertarget{affichage_8h_a8fd0754e86b00b02406a6bb02f41fff5}\label{affichage_8h_a8fd0754e86b00b02406a6bb02f41fff5} 
+\index{affichage.h@{affichage.h}!menuSecretaire@{menuSecretaire}}
+\index{menuSecretaire@{menuSecretaire}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{menuSecretaire()}{menuSecretaire()}}
+{\footnotesize\ttfamily void menu\+Secretaire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Affiche le menu de la secretarie. 
+
+Ce menu permet a la secretarie de gerer des actions sur les specialites et les praticiens. Il permet d\textquotesingle{}ajouter un praticien, de supprimer un praticien, d\textquotesingle{}afficher les specialites, de trouver les praticiens d\textquotesingle{}une specialite ayant de la place, d\textquotesingle{}afficher tout le centre et d\textquotesingle{}enregistrer un patient (file d\textquotesingle{}attente). \Hypertarget{affichage_8h_a881108445da67db710995d38876c61e3}\label{affichage_8h_a881108445da67db710995d38876c61e3} 
+\index{affichage.h@{affichage.h}!menuSelection@{menuSelection}}
+\index{menuSelection@{menuSelection}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{menuSelection()}{menuSelection()}}
+{\footnotesize\ttfamily void menu\+Selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Affiche le menu de selection entre Secretaire et \doxylink{structPraticien}{Praticien}. 
+

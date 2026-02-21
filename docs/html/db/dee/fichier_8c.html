@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SAE 1.02 - Comparaison d&#39;approches algorithmiques: Référence du fichier sources/fichier.c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SAE 1.02 - Comparaison d&#39;approches algorithmiques
+   </div>
+   <div id="projectbrief">Gestion d&#39;un centre médical codé en C.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier fichier.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/dae/affichage_8h_source.html">affichage.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/da3/structures_8h_source.html">structures.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d39/fichier_8h_source.html">fichier.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d4d/file_8h_source.html">file.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d5b/liste_8h_source.html">liste.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d12/tableau_8h_source.html">tableau.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de fichier.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d99/fichier_8c__incl.png" border="0" usemap="#asources_2fichier_8c" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ade90a24e7ddc4e129b97e8868413233e" id="r_ade90a24e7ddc4e129b97e8868413233e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dee/fichier_8c.html#ade90a24e7ddc4e129b97e8868413233e">chargement</a> (FILE *flot, <a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> *tabSpe[], int *nbSpe, int *maxSpe, int *tlog, int *tphy)</td></tr>
+<tr class="memdesc:ade90a24e7ddc4e129b97e8868413233e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Chargement d'un fichier de spécialités, de leurs praticiens et de leurs patients.  <br /></td></tr>
+<tr class="separator:ade90a24e7ddc4e129b97e8868413233e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05f2bb086bbba4a8e38332277e827c7" id="r_ac05f2bb086bbba4a8e38332277e827c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dee/fichier_8c.html#ac05f2bb086bbba4a8e38332277e827c7">sauvegarde</a> (FILE *flot, <a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **tabSpe, int nbSpe)</td></tr>
+<tr class="memdesc:ac05f2bb086bbba4a8e38332277e827c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sauvegarde la liste des spécialités, des praticiens et leurs patients dans un fichier.  <br /></td></tr>
+<tr class="separator:ac05f2bb086bbba4a8e38332277e827c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ade90a24e7ddc4e129b97e8868413233e" name="ade90a24e7ddc4e129b97e8868413233e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade90a24e7ddc4e129b97e8868413233e">&#9670;&#160;</a></span>chargement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int chargement </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>flot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> *&#160;</td>
+          <td class="paramname"><em>tabSpe</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>nbSpe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>maxSpe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>tlog</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>tphy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Chargement d'un fichier de spécialités, de leurs praticiens et de leurs patients. </p>
+<p>La fonction charge un fichier de spécialités, de leurs praticiens et de leurs patients. Elle lit le fichier et stock les informations dans des structures de type <a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a>, <a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> et <a class="el" href="../../d9/d77/structPatient.html">Patient</a>. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flot</td><td>Le fichier à charger. </td></tr>
+    <tr><td class="paramname">tabSpe</td><td>Le tableau des spécialités. </td></tr>
+    <tr><td class="paramname">nbSpe</td><td>Le nombre de spécialités dans le tableau. </td></tr>
+    <tr><td class="paramname">maxSpe</td><td>La capacité maximale du tableau. </td></tr>
+    <tr><td class="paramname">tlog</td><td>Le nombre de spécialités déjà dans le tableau. </td></tr>
+    <tr><td class="paramname">tphy</td><td>Le nombre de spécialités que l'on peut encore ajouter dans le tableau. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si le chargement est réussi, -1 si l'un des arguments est NULL, -2 si la réallocation du tableau échoue. </dd></dl>
+
+</div>
+</div>
+<a id="ac05f2bb086bbba4a8e38332277e827c7" name="ac05f2bb086bbba4a8e38332277e827c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac05f2bb086bbba4a8e38332277e827c7">&#9670;&#160;</a></span>sauvegarde()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sauvegarde </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>flot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **&#160;</td>
+          <td class="paramname"><em>tabSpe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbSpe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sauvegarde la liste des spécialités, des praticiens et leurs patients dans un fichier. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flot</td><td>Le fichier dans lequel on veut sauvegarder. </td></tr>
+    <tr><td class="paramname">tabSpe</td><td>Le tableau des spécialités. </td></tr>
+    <tr><td class="paramname">nbSpe</td><td>Le nombre de spécialités dans le tableau. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nombre de spécialités sauvegardées. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

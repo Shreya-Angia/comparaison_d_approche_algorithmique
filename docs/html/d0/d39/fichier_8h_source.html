@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SAE 1.02 - Comparaison d&#39;approches algorithmiques:  Fichier source de sources/fichier.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SAE 1.02 - Comparaison d&#39;approches algorithmiques
+   </div>
+   <div id="projectbrief">Gestion d&#39;un centre médical codé en C.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(1); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">fichier.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d0/d39/fichier_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/da3/structures_8h.html">structures.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d0/d39/fichier_8h.html#ade90a24e7ddc4e129b97e8868413233e">chargement</a>(FILE *flot, <a class="code hl_struct" href="../../d8/dd6/structSpecialite.html">Specialite</a> *tabSpe[], <span class="keywordtype">int</span> *nbSpe, <span class="keywordtype">int</span> *maxSpe, <span class="keywordtype">int</span> *tlog, <span class="keywordtype">int</span> *tphy);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d0/d39/fichier_8h.html#ac05f2bb086bbba4a8e38332277e827c7">sauvegarde</a>(FILE *flot, <a class="code hl_struct" href="../../d8/dd6/structSpecialite.html">Specialite</a> **tabSpe, <span class="keywordtype">int</span> nbSpe);</div>
+<div class="ttc" id="afichier_8h_html_ac05f2bb086bbba4a8e38332277e827c7"><div class="ttname"><a href="../../d0/d39/fichier_8h.html#ac05f2bb086bbba4a8e38332277e827c7">sauvegarde</a></div><div class="ttdeci">int sauvegarde(FILE *flot, Specialite **tabSpe, int nbSpe)</div><div class="ttdoc">Sauvegarde la liste des spécialités, des praticiens et leurs patients dans un fichier.</div><div class="ttdef"><b>Definition</b> fichier.c:96</div></div>
+<div class="ttc" id="afichier_8h_html_ade90a24e7ddc4e129b97e8868413233e"><div class="ttname"><a href="../../d0/d39/fichier_8h.html#ade90a24e7ddc4e129b97e8868413233e">chargement</a></div><div class="ttdeci">int chargement(FILE *flot, Specialite *tabSpe[], int *nbSpe, int *maxSpe, int *tlog, int *tphy)</div><div class="ttdoc">Chargement d'un fichier de spécialités, de leurs praticiens et de leurs patients.</div><div class="ttdef"><b>Definition</b> fichier.c:13</div></div>
+<div class="ttc" id="astructSpecialite_html"><div class="ttname"><a href="../../d8/dd6/structSpecialite.html">Specialite</a></div><div class="ttdef"><b>Definition</b> structures.h:45</div></div>
+<div class="ttc" id="astructures_8h_html"><div class="ttname"><a href="../../dd/da3/structures_8h.html">structures.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

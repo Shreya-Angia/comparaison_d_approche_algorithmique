@@ -1,0 +1,14 @@
+var searchData=
+[
+  ['sauvegarde_0',['sauvegarde',['../db/dee/fichier_8c.html#ac05f2bb086bbba4a8e38332277e827c7',1,'sauvegarde(FILE *flot, Specialite **tabSpe, int nbSpe):&#160;fichier.c'],['../d0/d39/fichier_8h.html#ac05f2bb086bbba4a8e38332277e827c7',1,'sauvegarde(FILE *flot, Specialite **tabSpe, int nbSpe):&#160;fichier.c']]],
+  ['specialite_1',['Specialite',['../d8/dd6/structSpecialite.html',1,'']]],
+  ['structures_2eh_2',['structures.h',['../dd/da3/structures_8h.html',1,'']]],
+  ['suiv_3',['suiv',['../d5/d98/structmaillonf.html#abc71e9bbb8a1abf358081fc19d908f58',1,'maillonf::suiv'],['../df/d42/structpraticien.html#aa407285d89f1d3c0ae9ae6664b25dcaf',1,'praticien::suiv']]],
+  ['supprimer_4',['supprimer',['../d3/dc8/liste_8c.html#a8bf9d4810adfa33d62b5f418401ff060',1,'supprimer(listePraticiens l, char *nom):&#160;liste.c'],['../d4/d5b/liste_8h.html#a8bf9d4810adfa33d62b5f418401ff060',1,'supprimer(listePraticiens l, char *nom):&#160;liste.c']]],
+  ['supprimer1patient_5',['supprimer1patient',['../d7/d42/globalePraticien_8c.html#a279875b082bce485d666cc19e4845f50',1,'supprimer1Patient(Praticien p):&#160;globalePraticien.c'],['../d2/d5e/globalePraticien_8h.html#a279875b082bce485d666cc19e4845f50',1,'supprimer1Patient(Praticien p):&#160;globalePraticien.c']]],
+  ['supprimer1praticien_6',['supprimer1praticien',['../d6/d13/globaleSecretaire_8c.html#a40d3d458aa6dfec25c9b6f691e2c50c2',1,'supprimer1Praticien(Specialite **tspe, int *nbSpe):&#160;globaleSecretaire.c'],['../d3/d06/globaleSecretaire_8h.html#a40d3d458aa6dfec25c9b6f691e2c50c2',1,'supprimer1Praticien(Specialite **tspe, int *nbSpe):&#160;globaleSecretaire.c']]],
+  ['supprimerpatient_7',['supprimerpatient',['../dc/dad/tableau_8c.html#a98452b9171c759dccc14b1b358d597f3',1,'supprimerPatient(Praticien *praticien, int numSecu):&#160;tableau.c'],['../d4/d12/tableau_8h.html#a98452b9171c759dccc14b1b358d597f3',1,'supprimerPatient(Praticien *praticien, int numSecu):&#160;tableau.c']]],
+  ['supprimerpatientf_8',['supprimerpatientf',['../d6/d13/file_8c.html#a1c7597c9042675904d48249974b43d77',1,'supprimerPatientF(File f):&#160;file.c'],['../d2/d4d/file_8h.html#a1c7597c9042675904d48249974b43d77',1,'supprimerPatientF(File f):&#160;file.c']]],
+  ['supprimerspecialte_9',['supprimerspecialte',['../dc/dad/tableau_8c.html#abc3fa2b065461c3a6da555f2aeb8c423',1,'supprimerSpecialte(Specialite *e, listePraticiens *p, Specialite **tab, int *nb):&#160;tableau.c'],['../d4/d12/tableau_8h.html#abc3fa2b065461c3a6da555f2aeb8c423',1,'supprimerSpecialte(Specialite *e, listePraticiens *p, Specialite **tab, int *nb):&#160;tableau.c']]],
+  ['supprimertete_10',['supprimertete',['../d3/dc8/liste_8c.html#a6b7bc2446a020eb374e34a5ca9d46eb6',1,'supprimerTete(listePraticiens l):&#160;liste.c'],['../d4/d5b/liste_8h.html#a6b7bc2446a020eb374e34a5ca9d46eb6',1,'supprimerTete(listePraticiens l):&#160;liste.c']]]
+];

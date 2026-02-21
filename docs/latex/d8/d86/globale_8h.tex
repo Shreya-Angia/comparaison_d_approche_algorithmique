@@ -1,0 +1,63 @@
+\doxysection{Référence du fichier sources/globale.h}
+\hypertarget{globale_8h}{}\label{globale_8h}\index{sources/globale.h@{sources/globale.h}}
+{\ttfamily \#include "{}structures.\+h"{}}\newline
+Graphe des dépendances par inclusion de globale.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{globale_8h_a2e7572a257ef98a7c77ec2d6a88cb021}{globale\+Praticien}} (\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab\+Spe, int nb\+Spe)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de gérer les actions que peut réaliser un praticien. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{globale_8h_a2e5fccc3a59297ffa4a55772bbd0f122}{globale\+Secretaire}} (\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab\+Spe, int \texorpdfstring{$\ast$}{*}nb\+Spe)
+\begin{DoxyCompactList}\small\item\em Fonction qui gère les actions que peuvent réaliser les secrétaires. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{globale_8h_acab59be0a96e0be36048dfa7a6e915ba}{f\+Globale}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction principale du programme qui permet d\textquotesingle{}effectuer les différentes actions sur le centre. La fonction f\+Globale permet de charger les données du centre, de sélectionner le type d\textquotesingle{}utilisateur (Secrétaire ou \doxylink{structPraticien}{Praticien}), d\textquotesingle{}effectuer les actions associées au type d\textquotesingle{}utilisateur et de sauvegarder les données avant de quitter le programme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{globale_8h_acab59be0a96e0be36048dfa7a6e915ba}\label{globale_8h_acab59be0a96e0be36048dfa7a6e915ba} 
+\index{globale.h@{globale.h}!fGlobale@{fGlobale}}
+\index{fGlobale@{fGlobale}!globale.h@{globale.h}}
+\doxysubsubsection{\texorpdfstring{fGlobale()}{fGlobale()}}
+{\footnotesize\ttfamily void f\+Globale (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction principale du programme qui permet d\textquotesingle{}effectuer les différentes actions sur le centre. La fonction f\+Globale permet de charger les données du centre, de sélectionner le type d\textquotesingle{}utilisateur (Secrétaire ou \doxylink{structPraticien}{Praticien}), d\textquotesingle{}effectuer les actions associées au type d\textquotesingle{}utilisateur et de sauvegarder les données avant de quitter le programme. 
+
+\Hypertarget{globale_8h_a2e7572a257ef98a7c77ec2d6a88cb021}\label{globale_8h_a2e7572a257ef98a7c77ec2d6a88cb021} 
+\index{globale.h@{globale.h}!globalePraticien@{globalePraticien}}
+\index{globalePraticien@{globalePraticien}!globale.h@{globale.h}}
+\doxysubsubsection{\texorpdfstring{globalePraticien()}{globalePraticien()}}
+{\footnotesize\ttfamily void globale\+Praticien (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab\+Spe,  }\item[{int}]{nb\+Spe }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de gérer les actions que peut réaliser un praticien. 
+
+La fonction demande le nom du praticien, le recherche dans toutes les spécialités, puis propose les actions qu\textquotesingle{}il peut réaliser (appeler un patient, afficher les patients en ordre lexicographique, afficher les patients en ordre de leur date de visite, afficher les patients qui ne sont pas venus depuis une date donnée, faire de la place dans la file d\textquotesingle{}attente). La fonction sauvegarde les données dans un fichier quand le praticien quitte. 
+\begin{DoxyParams}{Paramètres}
+{\em tab\+Spe} & Le tableau de pointeur vers les spécialités. \\
+\hline
+{\em nb\+Spe} & Le nombre de spécialités dans le tableau. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{globale_8h_a2e5fccc3a59297ffa4a55772bbd0f122}\label{globale_8h_a2e5fccc3a59297ffa4a55772bbd0f122} 
+\index{globale.h@{globale.h}!globaleSecretaire@{globaleSecretaire}}
+\index{globaleSecretaire@{globaleSecretaire}!globale.h@{globale.h}}
+\doxysubsubsection{\texorpdfstring{globaleSecretaire()}{globaleSecretaire()}}
+{\footnotesize\ttfamily void globale\+Secretaire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab\+Spe,  }\item[{int \texorpdfstring{$\ast$}{*}}]{nb\+Spe }\end{DoxyParamCaption})}
+
+
+
+Fonction qui gère les actions que peuvent réaliser les secrétaires. 
+
+Cette fonction affiche le menu des secrétaires et permet de choisir une action. Les actions possibles sont l\textquotesingle{}ajout d\textquotesingle{}un praticien, la suppression d\textquotesingle{}un praticien, l\textquotesingle{}affichage des spécialités et l\textquotesingle{}affichage des patients en attente. La fonction sauvegarde également les données dans le fichier "{}sources/\+Centre.\+txt"{} quand la secretaire choisit de quitter. 
+\begin{DoxyParams}{Paramètres}
+{\em tab\+Spe} & Le tableau de spécialités \\
+\hline
+{\em nb\+Spe} & Le nombre de spécialités dans le tableau \\
+\hline
+\end{DoxyParams}

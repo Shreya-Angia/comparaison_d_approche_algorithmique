@@ -1,0 +1,690 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SAE 1.02 - Comparaison d&#39;approches algorithmiques: Référence du fichier sources/tableau.c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SAE 1.02 - Comparaison d&#39;approches algorithmiques
+   </div>
+   <div id="projectbrief">Gestion d&#39;un centre médical codé en C.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier tableau.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions qui concernent les actions à réaliser sur des tableaux de pointeurs dynamique et static.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d12/tableau_8h_source.html">tableau.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/dae/affichage_8h_source.html">affichage.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de tableau.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d68/tableau_8c__incl.png" border="0" usemap="#asources_2tableau_8c" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ac1fc9f7fe58e50cb9eecf60770a01e09" id="r_ac1fc9f7fe58e50cb9eecf60770a01e09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dad/tableau_8c.html#ac1fc9f7fe58e50cb9eecf60770a01e09">ajouterPatient</a> (<a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> *<a class="el" href="../../df/d42/structpraticien.html">praticien</a>, <a class="el" href="../../d9/d77/structPatient.html">Patient</a> *pat)</td></tr>
+<tr class="memdesc:ac1fc9f7fe58e50cb9eecf60770a01e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute un patient au tableau des patients d'un praticien.  <br /></td></tr>
+<tr class="separator:ac1fc9f7fe58e50cb9eecf60770a01e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98452b9171c759dccc14b1b358d597f3" id="r_a98452b9171c759dccc14b1b358d597f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dad/tableau_8c.html#a98452b9171c759dccc14b1b358d597f3">supprimerPatient</a> (<a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> *<a class="el" href="../../df/d42/structpraticien.html">praticien</a>, int numSecu)</td></tr>
+<tr class="memdesc:a98452b9171c759dccc14b1b358d597f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime un patient d'un praticien.  <br /></td></tr>
+<tr class="separator:a98452b9171c759dccc14b1b358d597f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e84164e195f00f41a690f2836146478" id="r_a2e84164e195f00f41a690f2836146478"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dad/tableau_8c.html#a2e84164e195f00f41a690f2836146478">ajouterSpecialite</a> (<a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> *s, <a class="el" href="../../dd/da3/structures_8h.html#a3be7a949606cfbac44fc07db7e047728">listePraticiens</a> *p, <a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **tab, int *nb, int *max)</td></tr>
+<tr class="memdesc:a2e84164e195f00f41a690f2836146478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute une spécialité dans un tableau de spécialités.  <br /></td></tr>
+<tr class="separator:a2e84164e195f00f41a690f2836146478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3fa2b065461c3a6da555f2aeb8c423" id="r_abc3fa2b065461c3a6da555f2aeb8c423"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dad/tableau_8c.html#abc3fa2b065461c3a6da555f2aeb8c423">supprimerSpecialte</a> (<a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> *e, <a class="el" href="../../dd/da3/structures_8h.html#a3be7a949606cfbac44fc07db7e047728">listePraticiens</a> *p, <a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **tab, int *nb)</td></tr>
+<tr class="memdesc:abc3fa2b065461c3a6da555f2aeb8c423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime une spécialité d'un tableau de spécialités.  <br /></td></tr>
+<tr class="separator:abc3fa2b065461c3a6da555f2aeb8c423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac580ed49d365a11fa3f73d781e912c20" id="r_ac580ed49d365a11fa3f73d781e912c20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dad/tableau_8c.html#ac580ed49d365a11fa3f73d781e912c20">copier</a> (<a class="el" href="../../d9/d77/structPatient.html">Patient</a> **tab, int i, int j, <a class="el" href="../../d9/d77/structPatient.html">Patient</a> **R)</td></tr>
+<tr class="memdesc:ac580ed49d365a11fa3f73d781e912c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copie un deux tableau en un seul tableau de patients.  <br /></td></tr>
+<tr class="separator:ac580ed49d365a11fa3f73d781e912c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebeb52ce09d8bbd4fa60cad2b72c5195" id="r_aebeb52ce09d8bbd4fa60cad2b72c5195"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dad/tableau_8c.html#aebeb52ce09d8bbd4fa60cad2b72c5195">fusion</a> (<a class="el" href="../../d9/d77/structPatient.html">Patient</a> **R, int nbR, <a class="el" href="../../d9/d77/structPatient.html">Patient</a> **S, int nbS, <a class="el" href="../../d9/d77/structPatient.html">Patient</a> **tab)</td></tr>
+<tr class="memdesc:aebeb52ce09d8bbd4fa60cad2b72c5195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fusion de deux tableau de patients.  <br /></td></tr>
+<tr class="separator:aebeb52ce09d8bbd4fa60cad2b72c5195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e8fffacdeac5ecf4fe1b906683581b" id="r_a91e8fffacdeac5ecf4fe1b906683581b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dad/tableau_8c.html#a91e8fffacdeac5ecf4fe1b906683581b">triLexicographiquePatients</a> (<a class="el" href="../../d9/d77/structPatient.html">Patient</a> **tab, int nb)</td></tr>
+<tr class="memdesc:a91e8fffacdeac5ecf4fe1b906683581b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trie lexicographique des patients d'un tableau.  <br /></td></tr>
+<tr class="separator:a91e8fffacdeac5ecf4fe1b906683581b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4731655b5b03c14595a124b81caa3675" id="r_a4731655b5b03c14595a124b81caa3675"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dad/tableau_8c.html#a4731655b5b03c14595a124b81caa3675">compareDate</a> (<a class="el" href="../../d9/ddb/structDate.html">Date</a> *d1, <a class="el" href="../../d9/ddb/structDate.html">Date</a> *d2)</td></tr>
+<tr class="memdesc:a4731655b5b03c14595a124b81caa3675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare deux dates.  <br /></td></tr>
+<tr class="separator:a4731655b5b03c14595a124b81caa3675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b7212ed580859cbc880051cb36b347" id="r_a60b7212ed580859cbc880051cb36b347"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dad/tableau_8c.html#a60b7212ed580859cbc880051cb36b347">quickSort</a> (<a class="el" href="../../d9/d77/structPatient.html">Patient</a> **tab, int nb)</td></tr>
+<tr class="memdesc:a60b7212ed580859cbc880051cb36b347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tri des patients.  <br /></td></tr>
+<tr class="separator:a60b7212ed580859cbc880051cb36b347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d5bf06a5ef16fc31c4ffc1c9775591" id="r_a64d5bf06a5ef16fc31c4ffc1c9775591"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dad/tableau_8c.html#a64d5bf06a5ef16fc31c4ffc1c9775591">rechercherSpe</a> (<a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **tSpe, char *nom, int nbSpe)</td></tr>
+<tr class="memdesc:a64d5bf06a5ef16fc31c4ffc1c9775591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recherche dichotomique d'une specialité dans un tableau de pointeur.  <br /></td></tr>
+<tr class="separator:a64d5bf06a5ef16fc31c4ffc1c9775591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa125e12d6888535c24bc017e65aa31dd" id="r_aa125e12d6888535c24bc017e65aa31dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d77/structPatient.html">Patient</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dad/tableau_8c.html#aa125e12d6888535c24bc017e65aa31dd">trouverPatient</a> (<a class="el" href="../../d9/d77/structPatient.html">Patient</a> **tPat, char *nom, int nbPat)</td></tr>
+<tr class="memdesc:aa125e12d6888535c24bc017e65aa31dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cherche un patient par son nom dans un tableau de patients.  <br /></td></tr>
+<tr class="separator:aa125e12d6888535c24bc017e65aa31dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239a652921cc47710a0401dd8eae93fd" id="r_a239a652921cc47710a0401dd8eae93fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dad/tableau_8c.html#a239a652921cc47710a0401dd8eae93fd">rechercheDepuisCertainTps</a> (<a class="el" href="../../d9/ddb/structDate.html">Date</a> d, <a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> p, <a class="el" href="../../d9/d77/structPatient.html">Patient</a> **tabRech)</td></tr>
+<tr class="memdesc:a239a652921cc47710a0401dd8eae93fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recherche les patients qui ne sont pas venus depuis une date donnée.  <br /></td></tr>
+<tr class="separator:a239a652921cc47710a0401dd8eae93fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions qui concernent les actions à réaliser sur des tableaux de pointeurs dynamique et static. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Elora LIAGRE , Ambre GUILLAUMIN-TORRES &amp; Shreya ANGIA </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Décembre 2025 - Janvier 2026 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ac1fc9f7fe58e50cb9eecf60770a01e09" name="ac1fc9f7fe58e50cb9eecf60770a01e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1fc9f7fe58e50cb9eecf60770a01e09">&#9670;&#160;</a></span>ajouterPatient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ajouterPatient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> *&#160;</td>
+          <td class="paramname"><em>praticien</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d77/structPatient.html">Patient</a> *&#160;</td>
+          <td class="paramname"><em>pat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute un patient au tableau des patients d'un praticien. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">praticien</td><td>Le praticien concerné </td></tr>
+    <tr><td class="paramname">pat</td><td>Le patient à ajouter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si l'ajout est réussi, -1 si l'un des arguments est NULL, -2 si la réallocation du tableau échoue </dd></dl>
+
+</div>
+</div>
+<a id="a2e84164e195f00f41a690f2836146478" name="a2e84164e195f00f41a690f2836146478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e84164e195f00f41a690f2836146478">&#9670;&#160;</a></span>ajouterSpecialite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> ** ajouterSpecialite </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/da3/structures_8h.html#a3be7a949606cfbac44fc07db7e047728">listePraticiens</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>nb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute une spécialité dans un tableau de spécialités. </p>
+<p>La fonction insère la spécialité s dans le tableau tab en utilisant l'algorithme de recherche dichotomique. Si la spécialité existe déjà, elle n'est pas ajoutée. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>La spécialité à ajouter. </td></tr>
+    <tr><td class="paramname">p</td><td>La liste des praticiens associée à la spécialité. </td></tr>
+    <tr><td class="paramname">tab</td><td>Le tableau de spécialités. </td></tr>
+    <tr><td class="paramname">nb</td><td>Le nombre de spécialités dans le tableau. </td></tr>
+    <tr><td class="paramname">max</td><td>La capacité maximale du tableau. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le tableau mis à jour. </dd></dl>
+
+</div>
+</div>
+<a id="a4731655b5b03c14595a124b81caa3675" name="a4731655b5b03c14595a124b81caa3675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4731655b5b03c14595a124b81caa3675">&#9670;&#160;</a></span>compareDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int compareDate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/ddb/structDate.html">Date</a> *&#160;</td>
+          <td class="paramname"><em>d1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/ddb/structDate.html">Date</a> *&#160;</td>
+          <td class="paramname"><em>d2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare deux dates. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d1</td><td>Première date à comparer </td></tr>
+    <tr><td class="paramname">d2</td><td>Deuxième date à comparer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>-1 si d1 est avant d2, 1 si d1 est après d2, 0 si d1 est égal à d2 </dd></dl>
+
+</div>
+</div>
+<a id="ac580ed49d365a11fa3f73d781e912c20" name="ac580ed49d365a11fa3f73d781e912c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac580ed49d365a11fa3f73d781e912c20">&#9670;&#160;</a></span>copier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void copier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d77/structPatient.html">Patient</a> **&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d77/structPatient.html">Patient</a> **&#160;</td>
+          <td class="paramname"><em>R</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copie un deux tableau en un seul tableau de patients. </p>
+<p>Copie les patients du tableau tab entre l'indice i et j (inclus) dans le tableau R. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>Le tableau de patients source. </td></tr>
+    <tr><td class="paramname">i</td><td>L'indice de début de la copie. </td></tr>
+    <tr><td class="paramname">j</td><td>L'indice de fin de la copie. </td></tr>
+    <tr><td class="paramname">R</td><td>Le tableau de patients destination. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aebeb52ce09d8bbd4fa60cad2b72c5195" name="aebeb52ce09d8bbd4fa60cad2b72c5195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebeb52ce09d8bbd4fa60cad2b72c5195">&#9670;&#160;</a></span>fusion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fusion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d77/structPatient.html">Patient</a> **&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d77/structPatient.html">Patient</a> **&#160;</td>
+          <td class="paramname"><em>S</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d77/structPatient.html">Patient</a> **&#160;</td>
+          <td class="paramname"><em>tab</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fusion de deux tableau de patients. </p>
+<p>La fonction prend en paramètre deux tableau de patients R et S, ainsi que leurs tailles respectives nbR et nbS. Les patients sont fusionnés dans le tableau tab, en prenant soin de conserver l'ordre alphabétique. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">R</td><td>Premier tableau de patients. </td></tr>
+    <tr><td class="paramname">nbR</td><td>Taille du premier tableau. </td></tr>
+    <tr><td class="paramname">S</td><td>Deuxième tableau de patients. </td></tr>
+    <tr><td class="paramname">nbS</td><td>Taille du deuxième tableau. </td></tr>
+    <tr><td class="paramname">tab</td><td>Tableau dans lequel on fusionne les patients. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a60b7212ed580859cbc880051cb36b347" name="a60b7212ed580859cbc880051cb36b347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b7212ed580859cbc880051cb36b347">&#9670;&#160;</a></span>quickSort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void quickSort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d77/structPatient.html">Patient</a> **&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tri des patients. </p>
+<p>Tri les patients dans l'ordre de leur date de dernière visite </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>Le tableau des patients </td></tr>
+    <tr><td class="paramname">nb</td><td>Le nombre de patients dans le tableau </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a239a652921cc47710a0401dd8eae93fd" name="a239a652921cc47710a0401dd8eae93fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a239a652921cc47710a0401dd8eae93fd">&#9670;&#160;</a></span>rechercheDepuisCertainTps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rechercheDepuisCertainTps </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/ddb/structDate.html">Date</a>&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d77/structPatient.html">Patient</a> **&#160;</td>
+          <td class="paramname"><em>tabRech</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recherche les patients qui ne sont pas venus depuis une date donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>La date à partir de laquelle vérifier les absences </td></tr>
+    <tr><td class="paramname">p</td><td>Le praticien concerné </td></tr>
+    <tr><td class="paramname">tabRech</td><td>Le tableau de patients qui ne sont pas venus depuis la date d </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nombre de patients qui ne sont pas venus depuis la date d</dd></dl>
+<p>Cette fonction parcourt la liste des patients d'un praticien et ajoute dans un tableau les patients qui ne sont pas venus depuis une date donnée. </p>
+
+</div>
+</div>
+<a id="a64d5bf06a5ef16fc31c4ffc1c9775591" name="a64d5bf06a5ef16fc31c4ffc1c9775591"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d5bf06a5ef16fc31c4ffc1c9775591">&#9670;&#160;</a></span>rechercherSpe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rechercherSpe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **&#160;</td>
+          <td class="paramname"><em>tSpe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbSpe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recherche dichotomique d'une specialité dans un tableau de pointeur. </p>
+<p>Recherche une spécialité dans un tableau de pointeur vers des spécialités. La recherche est faite en utilisant l'algorithme de recherche dichotomique. Si la spécialité est trouvée, la fonction renvoie l'indice de la spécialité dans le tableau. Sinon, la fonction renvoie -1. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tSpe</td><td>Le tableau de pointeur vers les spécialités. </td></tr>
+    <tr><td class="paramname">nom</td><td>Le nom de la spécialité à rechercher. </td></tr>
+    <tr><td class="paramname">nbSpe</td><td>Le nombre de spécialités dans le tableau. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>L'indice de la spécialité dans le tableau si elle est trouvée, -1 sinon. </dd></dl>
+
+</div>
+</div>
+<a id="a98452b9171c759dccc14b1b358d597f3" name="a98452b9171c759dccc14b1b358d597f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98452b9171c759dccc14b1b358d597f3">&#9670;&#160;</a></span>supprimerPatient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int supprimerPatient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> *&#160;</td>
+          <td class="paramname"><em>praticien</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numSecu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime un patient d'un praticien. </p>
+<p>La fonction supprime le patient correspondant au numéro de sécurité sociale numSecu de la liste des patients du praticien. Si le patient n'existe pas, la fonction renvoie -2. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">praticien</td><td>Le praticien concerné. </td></tr>
+    <tr><td class="paramname">numSecu</td><td>Le numéro de sécurité sociale du patient à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si le patient est supprimé, -2 si le patient n'existe pas, -1 si le praticien est NULL. </dd></dl>
+
+</div>
+</div>
+<a id="abc3fa2b065461c3a6da555f2aeb8c423" name="abc3fa2b065461c3a6da555f2aeb8c423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc3fa2b065461c3a6da555f2aeb8c423">&#9670;&#160;</a></span>supprimerSpecialte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> ** supprimerSpecialte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/da3/structures_8h.html#a3be7a949606cfbac44fc07db7e047728">listePraticiens</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>nb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime une spécialité d'un tableau de spécialités. </p>
+<p>La fonction supprime la spécialité e du tableau tab. Si la spécialité n'existe pas, le tableau reste inchangé. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>La spécialité à supprimer. </td></tr>
+    <tr><td class="paramname">p</td><td>La liste des praticiens associée à la spécialité. </td></tr>
+    <tr><td class="paramname">tab</td><td>Le tableau de spécialités. </td></tr>
+    <tr><td class="paramname">nb</td><td>Le nombre de spécialités dans le tableau. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le tableau mis à jour. </dd></dl>
+
+</div>
+</div>
+<a id="a91e8fffacdeac5ecf4fe1b906683581b" name="a91e8fffacdeac5ecf4fe1b906683581b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91e8fffacdeac5ecf4fe1b906683581b">&#9670;&#160;</a></span>triLexicographiquePatients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void triLexicographiquePatients </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d77/structPatient.html">Patient</a> **&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trie lexicographique des patients d'un tableau. </p>
+<p>Divise le tableau en deux parties, trie chaque partie récursivement, puis fusionne les deux parties triées pour obtenir le tableau trié. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>Le tableau de patients à trier. </td></tr>
+    <tr><td class="paramname">nb</td><td>Le nombre de patients dans le tableau. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa125e12d6888535c24bc017e65aa31dd" name="aa125e12d6888535c24bc017e65aa31dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa125e12d6888535c24bc017e65aa31dd">&#9670;&#160;</a></span>trouverPatient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d77/structPatient.html">Patient</a> * trouverPatient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d77/structPatient.html">Patient</a> **&#160;</td>
+          <td class="paramname"><em>tPat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbPat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cherche un patient par son nom dans un tableau de patients. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tPat</td><td>Le tableau des patients </td></tr>
+    <tr><td class="paramname">nom</td><td>Le nom du patient à chercher </td></tr>
+    <tr><td class="paramname">nbPat</td><td>Le nombre de patients dans le tableau </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le patient trouvé s'il existe, NULL sinon </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

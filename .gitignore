@@ -1,0 +1,25 @@
+# Fichiers compilés
+*.o
+*.out
+*.exe
+sae
+
+# Dossiers
+obj/
+bin/
+build/
+
+
+# Fichiers système
+.DS_Store
+.vscode/
+*~
+*.swp
+*.swo
+
+# Fichiers de débogage
+*.dSYM/
+
+# Fichiers temporaires
+*.log
+*.tmp

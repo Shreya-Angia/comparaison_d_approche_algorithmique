@@ -1,0 +1,55 @@
+\doxysection{structures.\+h}
+\hypertarget{structures_8h_source}{}\label{structures_8h_source}\index{sources/structures.h@{sources/structures.h}}
+\mbox{\hyperlink{structures_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ STRUCTURES\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ STRUCTURES\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}\{}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structDate_aa46f17e2418a7a21573b1210f30b4e72}{jour}};}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structDate_a9ce0f4d74252d7d1bf097ed047fbf880}{mois}};}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structDate_a350753866b672814ff1c44c55b2d20ca}{annee}};}
+\DoxyCodeLine{00008\ \}\ \mbox{\hyperlink{structDate}{Date}};}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{\mbox{\hyperlink{structures_8h_ae7d38601dfbd73adbe5c1b3ec34e0e13a1bb75a30f93b418be2d44aa0eafe9be3}{FAUX}},\ \mbox{\hyperlink{structures_8h_ae7d38601dfbd73adbe5c1b3ec34e0e13a763723ffe7a348ad0f5c1b58a331b523}{VRAI}}\}\ \mbox{\hyperlink{structures_8h_ae7d38601dfbd73adbe5c1b3ec34e0e13}{Boolean}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}\{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{char}\ nom[50];}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{char}\ prenom[50];}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structPatient_a554748afb2a7d41aa0054aa8cc850a46}{numSecu}};}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{structures_8h_ae7d38601dfbd73adbe5c1b3ec34e0e13}{Boolean}}\ \mbox{\hyperlink{structPatient_a1b4341601067bf2b66dd46ad84fc8329}{IsDate}};}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{structDate}{Date}}*\ \mbox{\hyperlink{structPatient_a72f6f7b5c0b346806f4f99f248fe9699}{derniereVisite}};}
+\DoxyCodeLine{00018\ \}\ \mbox{\hyperlink{structPatient}{Patient}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmaillonf}{maillonf}}\{}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{structPatient}{Patient}}*\ \mbox{\hyperlink{structmaillonf_a5a6cc0a6ac335f94f3721fbf4671954c}{patient}};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmaillonf}{maillonf}}\ *\mbox{\hyperlink{structmaillonf_abc71e9bbb8a1abf358081fc19d908f58}{suiv}};}
+\DoxyCodeLine{00024\ \}\mbox{\hyperlink{structures_8h_ad3581d4fccd931a5c8ffc5ab1670fd51}{MaillonF}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}\{}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{structmaillonf}{MaillonF}}\ *\mbox{\hyperlink{structFile_a6666283f626257fb130bfed5afc13d92}{t}};}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{structmaillonf}{MaillonF}}\ *\mbox{\hyperlink{structFile_ac986113211f65c91bc550abf06a3085b}{q}};}
+\DoxyCodeLine{00029\ \}\mbox{\hyperlink{structFile}{File}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}\{}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{char}\ nom[50];}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structPraticien_ae00683420e821fb3828154c0b2a3202d}{maxPatient}};\ \textcolor{comment}{//tmax}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structPraticien_ac570002fcf17fe5357748699dd83a0c9}{nbPatients}};\ \textcolor{comment}{//\ tlog}}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{structPatient}{Patient}}**\ \mbox{\hyperlink{structPraticien_a11907e8de9ad896e5228ac7548813758}{tPatientele}};\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{structFile}{File}}\ \mbox{\hyperlink{structPraticien_a66e70f2a9c1fdcf40c6a5c504eb61a25}{fileAttente}};}
+\DoxyCodeLine{00037\ \}\mbox{\hyperlink{structPraticien}{Praticien}};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structpraticien}{praticien}}\{}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{structPraticien}{Praticien}}\ \mbox{\hyperlink{structpraticien_a8c134e3edc3657ee10e676917f98b5d6}{praticien}};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structpraticien}{praticien}}\ *\mbox{\hyperlink{structpraticien_aa407285d89f1d3c0ae9ae6664b25dcaf}{suiv}};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \}\mbox{\hyperlink{structures_8h_a197249f6a46795f090a74f002b735bf5}{Maillon}},*\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{listePraticiens}};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{char}\ nom[50];}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{structpraticien}{listePraticiens}}*\ \mbox{\hyperlink{structSpecialite_a282ad574a89e023f52e081559ffbc7aa}{praticien}};}
+\DoxyCodeLine{00048\ \}\mbox{\hyperlink{structSpecialite}{Specialite}};}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

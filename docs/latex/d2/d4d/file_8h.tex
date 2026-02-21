@@ -1,0 +1,145 @@
+\doxysection{Référence du fichier sources/file.h}
+\hypertarget{file_8h}{}\label{file_8h}\index{sources/file.h@{sources/file.h}}
+
+
+Fonctions qui concernent les actions réalisées sur des files de pointeurs sur des structures dynamiques.  
+
+
+{\ttfamily \#include "{}structures.\+h"{}}\newline
+Graphe des dépendances par inclusion de file.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structFile}{File}} \mbox{\hyperlink{file_8h_a439156f991aeed577a04ab93d7023ba4}{filenouv}} (void)
+\begin{DoxyCompactList}\small\item\em Retourne une file vide. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structures_8h_ae7d38601dfbd73adbe5c1b3ec34e0e13}{Boolean}} \mbox{\hyperlink{file_8h_a0e6bfa35e12b88835676128ddbbc5393}{est\+Vide}} (\mbox{\hyperlink{structFile}{File}} f)
+\begin{DoxyCompactList}\small\item\em Test si la file est vide. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structFile}{File}} \mbox{\hyperlink{file_8h_af91c5d7d48e56f18508dc61113730c70}{ajouter\+PatientF}} (\mbox{\hyperlink{structFile}{File}} f, \mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Ajoute un patient a la fin d\textquotesingle{}une file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structFile}{File}} \mbox{\hyperlink{file_8h_a1c7597c9042675904d48249974b43d77}{supprimer\+PatientF}} (\mbox{\hyperlink{structFile}{File}} f)
+\begin{DoxyCompactList}\small\item\em Supprime le premier élément de la file. Supprime le premier élément de la file et libère la mémoire. Si la file est vide, affiche un message d\textquotesingle{}erreur et quitte le programme. Si la file ne contient qu\textquotesingle{}un élément, le supprime et libère la file de la mémoire. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{file_8h_abdfd2c3288a7c9253310cdc86d4e71fa}{tete}} (\mbox{\hyperlink{structFile}{File}} f)
+\begin{DoxyCompactList}\small\item\em Renvoie le patient en tête de file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{file_8h_a8a077b2da5fb6cb9fc773544df89bea5}{afficher\+File}} (\mbox{\hyperlink{structFile}{File}} f)
+\begin{DoxyCompactList}\small\item\em Affiche le contenu d\textquotesingle{}une file de patients. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonctions qui concernent les actions réalisées sur des files de pointeurs sur des structures dynamiques. 
+
+\begin{DoxyAuthor}{Auteur}
+Elora LIAGRE , Ambre GUILLAUMIN-\/\+TORRES \& Shreya ANGIA 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Décembre 2025 -\/ Janvier 2026 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{file_8h_a8a077b2da5fb6cb9fc773544df89bea5}\label{file_8h_a8a077b2da5fb6cb9fc773544df89bea5} 
+\index{file.h@{file.h}!afficherFile@{afficherFile}}
+\index{afficherFile@{afficherFile}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{afficherFile()}{afficherFile()}}
+{\footnotesize\ttfamily void afficher\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFile}{File}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Affiche le contenu d\textquotesingle{}une file de patients. 
+
+Affiche le nom, prénom et numéro de sécurité sociale de chaque patient stocké dans la file. 
+\begin{DoxyParams}{Paramètres}
+{\em f} & La file à afficher. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{file_8h_af91c5d7d48e56f18508dc61113730c70}\label{file_8h_af91c5d7d48e56f18508dc61113730c70} 
+\index{file.h@{file.h}!ajouterPatientF@{ajouterPatientF}}
+\index{ajouterPatientF@{ajouterPatientF}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{ajouterPatientF()}{ajouterPatientF()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structFile}{File}} ajouter\+PatientF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFile}{File}}}]{f,  }\item[{\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+
+
+Ajoute un patient a la fin d\textquotesingle{}une file. 
+
+La fonction ajouter\+PatientF prend en paramètre une file et un patient. Elle alloue de la mémoire pour un maillon de file, puis elle met a jour les pointeurs de tête et de queue de la file en fonction de si la file est vide ou non.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em f} & La file dans laquelle on veut ajouter le patient. \\
+\hline
+{\em p} & Le patient a ajouter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La file avec le patient ajouté. 
+\end{DoxyReturn}
+\Hypertarget{file_8h_a0e6bfa35e12b88835676128ddbbc5393}\label{file_8h_a0e6bfa35e12b88835676128ddbbc5393} 
+\index{file.h@{file.h}!estVide@{estVide}}
+\index{estVide@{estVide}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{estVide()}{estVide()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structures_8h_ae7d38601dfbd73adbe5c1b3ec34e0e13}{Boolean}} est\+Vide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFile}{File}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Test si la file est vide. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em f} & La file à tester. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Boolean VRAI si la file est vide, FAUX sinon. 
+\end{DoxyReturn}
+\Hypertarget{file_8h_a439156f991aeed577a04ab93d7023ba4}\label{file_8h_a439156f991aeed577a04ab93d7023ba4} 
+\index{file.h@{file.h}!filenouv@{filenouv}}
+\index{filenouv@{filenouv}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{filenouv()}{filenouv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structFile}{File}} filenouv (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Retourne une file vide. 
+
+\begin{DoxyReturn}{Renvoie}
+Une structure de type \doxylink{structFile}{File}. 
+\end{DoxyReturn}
+\Hypertarget{file_8h_a1c7597c9042675904d48249974b43d77}\label{file_8h_a1c7597c9042675904d48249974b43d77} 
+\index{file.h@{file.h}!supprimerPatientF@{supprimerPatientF}}
+\index{supprimerPatientF@{supprimerPatientF}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{supprimerPatientF()}{supprimerPatientF()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structFile}{File}} supprimer\+PatientF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFile}{File}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Supprime le premier élément de la file. Supprime le premier élément de la file et libère la mémoire. Si la file est vide, affiche un message d\textquotesingle{}erreur et quitte le programme. Si la file ne contient qu\textquotesingle{}un élément, le supprime et libère la file de la mémoire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em f} & La file dont on veut supprimer le premier élément. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La file sans son premier élément. 
+\end{DoxyReturn}
+\Hypertarget{file_8h_abdfd2c3288a7c9253310cdc86d4e71fa}\label{file_8h_abdfd2c3288a7c9253310cdc86d4e71fa} 
+\index{file.h@{file.h}!tete@{tete}}
+\index{tete@{tete}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{tete()}{tete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*} tete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFile}{File}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Renvoie le patient en tête de file. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em f} & \doxylink{structFile}{File} dont on veut renvoyer le patient en tête. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le patient en tête de file f. 
+\end{DoxyReturn}

@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SAE 1.02 - Comparaison d&#39;approches algorithmiques: Référence du fichier sources/globalePraticien.c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SAE 1.02 - Comparaison d&#39;approches algorithmiques
+   </div>
+   <div id="projectbrief">Gestion d&#39;un centre médical codé en C.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier globalePraticien.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d5e/globalePraticien_8h_source.html">globalePraticien.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/dae/affichage_8h_source.html">affichage.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d4d/file_8h_source.html">file.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d5b/liste_8h_source.html">liste.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d12/tableau_8h_source.html">tableau.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de globalePraticien.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d97/globalePraticien_8c__incl.png" border="0" usemap="#asources_2globalePraticien_8c" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a8907349107ed6528f683d7f213331771" id="r_a8907349107ed6528f683d7f213331771"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d42/globalePraticien_8c.html#a8907349107ed6528f683d7f213331771">appeler1Patient</a> (<a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> *p)</td></tr>
+<tr class="memdesc:a8907349107ed6528f683d7f213331771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le prochain patient en attente et permet de saisir la date de la visite.  <br /></td></tr>
+<tr class="separator:a8907349107ed6528f683d7f213331771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e6e6ac49d6d27d52e88fcbac73c1dd" id="r_a54e6e6ac49d6d27d52e88fcbac73c1dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d42/globalePraticien_8c.html#a54e6e6ac49d6d27d52e88fcbac73c1dd">globalePDepuis1CertainTps</a> (<a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> p)</td></tr>
+<tr class="memdesc:a54e6e6ac49d6d27d52e88fcbac73c1dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche la liste des patients qui ne sont pas venus depuis une date donnée.  <br /></td></tr>
+<tr class="separator:a54e6e6ac49d6d27d52e88fcbac73c1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d2ca6bf22dfd783e3a66435177ee8c" id="r_ae8d2ca6bf22dfd783e3a66435177ee8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d42/globalePraticien_8c.html#ae8d2ca6bf22dfd783e3a66435177ee8c">identifierPraticien</a> (<a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **tabSpe, int nbSpe)</td></tr>
+<tr class="memdesc:ae8d2ca6bf22dfd783e3a66435177ee8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connexion d'un praticien.  <br /></td></tr>
+<tr class="separator:ae8d2ca6bf22dfd783e3a66435177ee8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279875b082bce485d666cc19e4845f50" id="r_a279875b082bce485d666cc19e4845f50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d42/globalePraticien_8c.html#a279875b082bce485d666cc19e4845f50">supprimer1Patient</a> (<a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> p)</td></tr>
+<tr class="memdesc:a279875b082bce485d666cc19e4845f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime un patient d'un praticien.  <br /></td></tr>
+<tr class="separator:a279875b082bce485d666cc19e4845f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501f3be1c6f5dca20ce1c4896adda90d" id="r_a501f3be1c6f5dca20ce1c4896adda90d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d42/globalePraticien_8c.html#a501f3be1c6f5dca20ce1c4896adda90d">faireDeLaPlace</a> (<a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> *p)</td></tr>
+<tr class="memdesc:a501f3be1c6f5dca20ce1c4896adda90d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de supprimer un patient précis ou de supprimer tous les patients qui n'ont pas été vus depuis une date donnée.  <br /></td></tr>
+<tr class="separator:a501f3be1c6f5dca20ce1c4896adda90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a8907349107ed6528f683d7f213331771" name="a8907349107ed6528f683d7f213331771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8907349107ed6528f683d7f213331771">&#9670;&#160;</a></span>appeler1Patient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void appeler1Patient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le prochain patient en attente et permet de saisir la date de la visite. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Le praticien concerné.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Affiche le nom, le prénom et le numéro de sécurité sociale du patient, puis demande la date de la visite. Si la date est invalide, redemande la date jusqu'à ce qu'elle soit valide. Ajoute la date de la visite au patient et retire le patient de la file d'attente. </p>
+
+</div>
+</div>
+<a id="a501f3be1c6f5dca20ce1c4896adda90d" name="a501f3be1c6f5dca20ce1c4896adda90d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a501f3be1c6f5dca20ce1c4896adda90d">&#9670;&#160;</a></span>faireDeLaPlace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void faireDeLaPlace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de supprimer un patient précis ou de supprimer tous les patients qui n'ont pas été vus depuis une date donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Le praticien concerné.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction propose deux choix : supprimer un patient précis ou supprimer tous les patients qui n'ont pas été vus depuis une date donnée. Elle met à jour la liste des patients du praticien en conséquence. </p>
+
+</div>
+</div>
+<a id="a54e6e6ac49d6d27d52e88fcbac73c1dd" name="a54e6e6ac49d6d27d52e88fcbac73c1dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e6e6ac49d6d27d52e88fcbac73c1dd">&#9670;&#160;</a></span>globalePDepuis1CertainTps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void globalePDepuis1CertainTps </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche la liste des patients qui ne sont pas venus depuis une date donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Le praticien concerné</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction affiche la liste des patients concernés qui sont absents depuis la date d Si aucun patient n'est absent, affiche un message l'indiquant </p>
+
+</div>
+</div>
+<a id="ae8d2ca6bf22dfd783e3a66435177ee8c" name="ae8d2ca6bf22dfd783e3a66435177ee8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8d2ca6bf22dfd783e3a66435177ee8c">&#9670;&#160;</a></span>identifierPraticien()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> identifierPraticien </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **&#160;</td>
+          <td class="paramname"><em>tabSpe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbSpe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connexion d'un praticien. </p>
+<p>Demande le nom du praticien et le recherche dans toutes les spécialités </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabSpe</td><td>Le tableau de spécialités </td></tr>
+    <tr><td class="paramname">nbSpe</td><td>Le nombre de spécialités dans le tableau </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le praticien connecté </dd></dl>
+
+</div>
+</div>
+<a id="a279875b082bce485d666cc19e4845f50" name="a279875b082bce485d666cc19e4845f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279875b082bce485d666cc19e4845f50">&#9670;&#160;</a></span>supprimer1Patient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> supprimer1Patient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime un patient d'un praticien. </p>
+<p>La fonction demande le numéro de sécurité sociale du patient à supprimer. Si le patient est trouvé, il est supprimé de la liste des patients du praticien. Si le patient n'est pas trouvé, un message d'erreur est affiché. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Le praticien dont on veut supprimer le patient. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le praticien mis à jour. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

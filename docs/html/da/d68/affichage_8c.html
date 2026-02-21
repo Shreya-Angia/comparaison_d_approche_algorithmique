@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SAE 1.02 - Comparaison d&#39;approches algorithmiques: Référence du fichier sources/affichage.c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SAE 1.02 - Comparaison d&#39;approches algorithmiques
+   </div>
+   <div id="projectbrief">Gestion d&#39;un centre médical codé en C.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier affichage.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/dae/affichage_8h_source.html">affichage.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d12/tableau_8h_source.html">tableau.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d5b/liste_8h_source.html">liste.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de affichage.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d32/affichage_8c__incl.png" border="0" usemap="#asources_2affichage_8c" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a881108445da67db710995d38876c61e3" id="r_a881108445da67db710995d38876c61e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/affichage_8c.html#a881108445da67db710995d38876c61e3">menuSelection</a> ()</td></tr>
+<tr class="memdesc:a881108445da67db710995d38876c61e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le menu de selection entre Secretaire et <a class="el" href="../../d9/d35/structPraticien.html">Praticien</a>.  <br /></td></tr>
+<tr class="separator:a881108445da67db710995d38876c61e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd0754e86b00b02406a6bb02f41fff5" id="r_a8fd0754e86b00b02406a6bb02f41fff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/affichage_8c.html#a8fd0754e86b00b02406a6bb02f41fff5">menuSecretaire</a> ()</td></tr>
+<tr class="memdesc:a8fd0754e86b00b02406a6bb02f41fff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le menu de la secretarie.  <br /></td></tr>
+<tr class="separator:a8fd0754e86b00b02406a6bb02f41fff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1af3561ea127c7ab52b23e12d3d9205" id="r_ae1af3561ea127c7ab52b23e12d3d9205"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/affichage_8c.html#ae1af3561ea127c7ab52b23e12d3d9205">menuPraticien</a> ()</td></tr>
+<tr class="memdesc:ae1af3561ea127c7ab52b23e12d3d9205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le menu du praticien.  <br /></td></tr>
+<tr class="separator:ae1af3561ea127c7ab52b23e12d3d9205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a987405566748d6a75b0fc3f9c9e899c8" id="r_a987405566748d6a75b0fc3f9c9e899c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/affichage_8c.html#a987405566748d6a75b0fc3f9c9e899c8">affichageTriLex</a> (<a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> <a class="el" href="../../df/d42/structpraticien.html">praticien</a>)</td></tr>
+<tr class="memdesc:a987405566748d6a75b0fc3f9c9e899c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche les patients d'un praticien triés par ordre lexicographique.  <br /></td></tr>
+<tr class="separator:a987405566748d6a75b0fc3f9c9e899c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9483b9f136b21d9cbc9e778adf8c09" id="r_ace9483b9f136b21d9cbc9e778adf8c09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/affichage_8c.html#ace9483b9f136b21d9cbc9e778adf8c09">affichageTriVisite</a> (<a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> <a class="el" href="../../df/d42/structpraticien.html">praticien</a>)</td></tr>
+<tr class="memdesc:ace9483b9f136b21d9cbc9e778adf8c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche les patients d'un praticien par ordre de visite le plus recente au plus ancien.  <br /></td></tr>
+<tr class="separator:ace9483b9f136b21d9cbc9e778adf8c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8ce4661c1d5fc32cfaedf962376a79" id="r_aea8ce4661c1d5fc32cfaedf962376a79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/affichage_8c.html#aea8ce4661c1d5fc32cfaedf962376a79">afficherPDepuis1CertainTps</a> (<a class="el" href="../../d9/ddb/structDate.html">Date</a> d, <a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> <a class="el" href="../../df/d42/structpraticien.html">praticien</a>, <a class="el" href="../../d9/d77/structPatient.html">Patient</a> **tabPat, int nbPatients)</td></tr>
+<tr class="memdesc:aea8ce4661c1d5fc32cfaedf962376a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche la liste des patients qui ne sont pas venus depuis une date donnée.  <br /></td></tr>
+<tr class="separator:aea8ce4661c1d5fc32cfaedf962376a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a792e736926b433cc7f6adc60737c5" id="r_ae4a792e736926b433cc7f6adc60737c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/affichage_8c.html#ae4a792e736926b433cc7f6adc60737c5">afficherUnPraticien</a> (<a class="el" href="../../d9/d35/structPraticien.html">Praticien</a> <a class="el" href="../../df/d42/structpraticien.html">praticien</a>)</td></tr>
+<tr class="memdesc:ae4a792e736926b433cc7f6adc60737c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche les informations d'un praticien.  <br /></td></tr>
+<tr class="separator:ae4a792e736926b433cc7f6adc60737c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83e981a87513911b50cfc93fa638e48" id="r_ac83e981a87513911b50cfc93fa638e48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/affichage_8c.html#ac83e981a87513911b50cfc93fa638e48">afficherSpecialites</a> (<a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **tabSpecialites, int nbSpecialites)</td></tr>
+<tr class="memdesc:ac83e981a87513911b50cfc93fa638e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche une liste de specialites.  <br /></td></tr>
+<tr class="separator:ac83e981a87513911b50cfc93fa638e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb934086fc79c6c7694b7dbbd4f3e15d" id="r_acb934086fc79c6c7694b7dbbd4f3e15d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/affichage_8c.html#acb934086fc79c6c7694b7dbbd4f3e15d">afficherCentre</a> (<a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **tabSpecialites, int nbSpecialites)</td></tr>
+<tr class="memdesc:acb934086fc79c6c7694b7dbbd4f3e15d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le centre medical.  <br /></td></tr>
+<tr class="separator:acb934086fc79c6c7694b7dbbd4f3e15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057da21ff3ef95bd19d9ed7066a0667d" id="r_a057da21ff3ef95bd19d9ed7066a0667d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/affichage_8c.html#a057da21ff3ef95bd19d9ed7066a0667d">afficherPraticiensSpecialite</a> (<a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> *specialite)</td></tr>
+<tr class="memdesc:a057da21ff3ef95bd19d9ed7066a0667d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche la liste des praticiens d'une spécialité qui ont de la place disponible.  <br /></td></tr>
+<tr class="separator:a057da21ff3ef95bd19d9ed7066a0667d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a987405566748d6a75b0fc3f9c9e899c8" name="a987405566748d6a75b0fc3f9c9e899c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a987405566748d6a75b0fc3f9c9e899c8">&#9670;&#160;</a></span>affichageTriLex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void affichageTriLex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a>&#160;</td>
+          <td class="paramname"><em>praticien</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche les patients d'un praticien triés par ordre lexicographique. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">praticien</td><td>Le praticien dont on veut afficher les patients </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ace9483b9f136b21d9cbc9e778adf8c09" name="ace9483b9f136b21d9cbc9e778adf8c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9483b9f136b21d9cbc9e778adf8c09">&#9670;&#160;</a></span>affichageTriVisite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void affichageTriVisite </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a>&#160;</td>
+          <td class="paramname"><em>praticien</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche les patients d'un praticien par ordre de visite le plus recente au plus ancien. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">praticien</td><td>Le praticien dont on veut afficher les patients </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acb934086fc79c6c7694b7dbbd4f3e15d" name="acb934086fc79c6c7694b7dbbd4f3e15d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb934086fc79c6c7694b7dbbd4f3e15d">&#9670;&#160;</a></span>afficherCentre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherCentre </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **&#160;</td>
+          <td class="paramname"><em>tabSpecialites</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbSpecialites</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le centre medical. </p>
+<p>Affiche les spécialités et les praticiens qui y sont rattachés. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabSpecialites</td><td>Un tableau de <a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a>. </td></tr>
+    <tr><td class="paramname">nbSpecialites</td><td>Le nombre de spécialités dans le tableau. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aea8ce4661c1d5fc32cfaedf962376a79" name="aea8ce4661c1d5fc32cfaedf962376a79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8ce4661c1d5fc32cfaedf962376a79">&#9670;&#160;</a></span>afficherPDepuis1CertainTps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherPDepuis1CertainTps </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/ddb/structDate.html">Date</a>&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a>&#160;</td>
+          <td class="paramname"><em>praticien</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d77/structPatient.html">Patient</a> **&#160;</td>
+          <td class="paramname"><em>tabPat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbPatients</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche la liste des patients qui ne sont pas venus depuis une date donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>La date à partir de laquelle vérifier les absences </td></tr>
+    <tr><td class="paramname">praticien</td><td>Le praticien concerné </td></tr>
+    <tr><td class="paramname">tabPat</td><td>Le tableau de patients </td></tr>
+    <tr><td class="paramname">nbPatients</td><td>Le nombre de patients dans le tableau Affiche la liste des patients concernés qui sont absents depuis la date d Si aucun patient n'est absent, affiche un message l'indiquant </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a057da21ff3ef95bd19d9ed7066a0667d" name="a057da21ff3ef95bd19d9ed7066a0667d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057da21ff3ef95bd19d9ed7066a0667d">&#9670;&#160;</a></span>afficherPraticiensSpecialite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherPraticiensSpecialite </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> *&#160;</td>
+          <td class="paramname"><em>specialite</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche la liste des praticiens d'une spécialité qui ont de la place disponible. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">specialite</td><td>La spécialité dont on veut afficher les praticiens.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction affiche le nom de la spécialité, le nombre de praticiens qui ont de la place disponible et qui y sont rattachés et les informations sur ces praticiens. </p>
+
+</div>
+</div>
+<a id="ac83e981a87513911b50cfc93fa638e48" name="ac83e981a87513911b50cfc93fa638e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83e981a87513911b50cfc93fa638e48">&#9670;&#160;</a></span>afficherSpecialites()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherSpecialites </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/dd6/structSpecialite.html">Specialite</a> **&#160;</td>
+          <td class="paramname"><em>tabSpecialites</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbSpecialites</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche une liste de specialites. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabSpecialites</td><td>tableau de pointeur sur les specialites. </td></tr>
+    <tr><td class="paramname">nbSpecialites</td><td>nombre de specialites dans le tableau. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae4a792e736926b433cc7f6adc60737c5" name="ae4a792e736926b433cc7f6adc60737c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a792e736926b433cc7f6adc60737c5">&#9670;&#160;</a></span>afficherUnPraticien()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherUnPraticien </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d35/structPraticien.html">Praticien</a>&#160;</td>
+          <td class="paramname"><em>praticien</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche les informations d'un praticien. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">praticien</td><td>Le praticien dont on veut afficher les informations.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction affiche le nom, le nombre de patients et le nombre max de patients du praticien. </p>
+
+</div>
+</div>
+<a id="ae1af3561ea127c7ab52b23e12d3d9205" name="ae1af3561ea127c7ab52b23e12d3d9205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1af3561ea127c7ab52b23e12d3d9205">&#9670;&#160;</a></span>menuPraticien()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void menuPraticien </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le menu du praticien. </p>
+<p>Le menu du praticien propose les options suivantes :</p><ul>
+<li>Quitter</li>
+<li>Appeler un patient</li>
+<li>Patientèle (ordre lexicographique)</li>
+<li>Patientèle (par visite)</li>
+<li>Patients absents depuis un delai donné</li>
+<li>Faire de la place </li>
+</ul>
+
+</div>
+</div>
+<a id="a8fd0754e86b00b02406a6bb02f41fff5" name="a8fd0754e86b00b02406a6bb02f41fff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd0754e86b00b02406a6bb02f41fff5">&#9670;&#160;</a></span>menuSecretaire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void menuSecretaire </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le menu de la secretarie. </p>
+<p>Ce menu permet a la secretarie de gerer des actions sur les specialites et les praticiens. Il permet d'ajouter un praticien, de supprimer un praticien, d'afficher les specialites, de trouver les praticiens d'une specialite ayant de la place, d'afficher tout le centre et d'enregistrer un patient (file d'attente). </p>
+
+</div>
+</div>
+<a id="a881108445da67db710995d38876c61e3" name="a881108445da67db710995d38876c61e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a881108445da67db710995d38876c61e3">&#9670;&#160;</a></span>menuSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void menuSelection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le menu de selection entre Secretaire et <a class="el" href="../../d9/d35/structPraticien.html">Praticien</a>. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

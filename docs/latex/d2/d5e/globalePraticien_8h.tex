@@ -1,0 +1,124 @@
+\doxysection{Référence du fichier sources/globale\+Praticien.h}
+\hypertarget{globalePraticien_8h}{}\label{globalePraticien_8h}\index{sources/globalePraticien.h@{sources/globalePraticien.h}}
+
+
+Fonctions globales qui regroupent les actions que peuvent réaliser les praticiens et les secretaire.  
+
+
+{\ttfamily \#include "{}structures.\+h"{}}\newline
+Graphe des dépendances par inclusion de globale\+Praticien.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{globalePraticien_8h_a8907349107ed6528f683d7f213331771}{appeler1\+Patient}} (\mbox{\hyperlink{structPraticien}{Praticien}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Affiche le prochain patient en attente et permet de saisir la date de la visite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{globalePraticien_8h_a54e6e6ac49d6d27d52e88fcbac73c1dd}{globale\+PDepuis1\+Certain\+Tps}} (\mbox{\hyperlink{structPraticien}{Praticien}} p)
+\begin{DoxyCompactList}\small\item\em Affiche la liste des patients qui ne sont pas venus depuis une date donnée. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPraticien}{Praticien}} \mbox{\hyperlink{globalePraticien_8h_ae8d2ca6bf22dfd783e3a66435177ee8c}{identifier\+Praticien}} (\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab\+Spe, int nb\+Spe)
+\begin{DoxyCompactList}\small\item\em Connexion d\textquotesingle{}un praticien. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPraticien}{Praticien}} \mbox{\hyperlink{globalePraticien_8h_a279875b082bce485d666cc19e4845f50}{supprimer1\+Patient}} (\mbox{\hyperlink{structPraticien}{Praticien}} p)
+\begin{DoxyCompactList}\small\item\em Supprime un patient d\textquotesingle{}un praticien. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{globalePraticien_8h_a501f3be1c6f5dca20ce1c4896adda90d}{faire\+De\+La\+Place}} (\mbox{\hyperlink{structPraticien}{Praticien}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Permet de supprimer un patient précis ou de supprimer tous les patients qui n\textquotesingle{}ont pas été vus depuis une date donnée. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonctions globales qui regroupent les actions que peuvent réaliser les praticiens et les secretaire. 
+
+Fonctions globales qui gèrent les actions que peuvent réaliser les praticiens.
+
+\begin{DoxyAuthor}{Auteur}
+Elora LIAGRE , Ambre GUILLAUMIN-\/\+TORRES \& Shreya ANGIA 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Décembre 2025 -\/ Janvier 2026 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{globalePraticien_8h_a8907349107ed6528f683d7f213331771}\label{globalePraticien_8h_a8907349107ed6528f683d7f213331771} 
+\index{globalePraticien.h@{globalePraticien.h}!appeler1Patient@{appeler1Patient}}
+\index{appeler1Patient@{appeler1Patient}!globalePraticien.h@{globalePraticien.h}}
+\doxysubsubsection{\texorpdfstring{appeler1Patient()}{appeler1Patient()}}
+{\footnotesize\ttfamily void appeler1\+Patient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPraticien}{Praticien}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+
+
+Affiche le prochain patient en attente et permet de saisir la date de la visite. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Le praticien concerné.\\
+\hline
+\end{DoxyParams}
+Affiche le nom, le prénom et le numéro de sécurité sociale du patient, puis demande la date de la visite. Si la date est invalide, redemande la date jusqu\textquotesingle{}à ce qu\textquotesingle{}elle soit valide. Ajoute la date de la visite au patient et retire le patient de la file d\textquotesingle{}attente. \Hypertarget{globalePraticien_8h_a501f3be1c6f5dca20ce1c4896adda90d}\label{globalePraticien_8h_a501f3be1c6f5dca20ce1c4896adda90d} 
+\index{globalePraticien.h@{globalePraticien.h}!faireDeLaPlace@{faireDeLaPlace}}
+\index{faireDeLaPlace@{faireDeLaPlace}!globalePraticien.h@{globalePraticien.h}}
+\doxysubsubsection{\texorpdfstring{faireDeLaPlace()}{faireDeLaPlace()}}
+{\footnotesize\ttfamily void faire\+De\+La\+Place (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPraticien}{Praticien}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+
+
+Permet de supprimer un patient précis ou de supprimer tous les patients qui n\textquotesingle{}ont pas été vus depuis une date donnée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Le praticien concerné.\\
+\hline
+\end{DoxyParams}
+Cette fonction propose deux choix \+: supprimer un patient précis ou supprimer tous les patients qui n\textquotesingle{}ont pas été vus depuis une date donnée. Elle met à jour la liste des patients du praticien en conséquence. \Hypertarget{globalePraticien_8h_a54e6e6ac49d6d27d52e88fcbac73c1dd}\label{globalePraticien_8h_a54e6e6ac49d6d27d52e88fcbac73c1dd} 
+\index{globalePraticien.h@{globalePraticien.h}!globalePDepuis1CertainTps@{globalePDepuis1CertainTps}}
+\index{globalePDepuis1CertainTps@{globalePDepuis1CertainTps}!globalePraticien.h@{globalePraticien.h}}
+\doxysubsubsection{\texorpdfstring{globalePDepuis1CertainTps()}{globalePDepuis1CertainTps()}}
+{\footnotesize\ttfamily void globale\+PDepuis1\+Certain\+Tps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPraticien}{Praticien}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Affiche la liste des patients qui ne sont pas venus depuis une date donnée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Le praticien concerné\\
+\hline
+\end{DoxyParams}
+Cette fonction affiche la liste des patients concernés qui sont absents depuis la date d Si aucun patient n\textquotesingle{}est absent, affiche un message l\textquotesingle{}indiquant \Hypertarget{globalePraticien_8h_ae8d2ca6bf22dfd783e3a66435177ee8c}\label{globalePraticien_8h_ae8d2ca6bf22dfd783e3a66435177ee8c} 
+\index{globalePraticien.h@{globalePraticien.h}!identifierPraticien@{identifierPraticien}}
+\index{identifierPraticien@{identifierPraticien}!globalePraticien.h@{globalePraticien.h}}
+\doxysubsubsection{\texorpdfstring{identifierPraticien()}{identifierPraticien()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPraticien}{Praticien}} identifier\+Praticien (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab\+Spe,  }\item[{int}]{nb\+Spe }\end{DoxyParamCaption})}
+
+
+
+Connexion d\textquotesingle{}un praticien. 
+
+Demande le nom du praticien et le recherche dans toutes les spécialités 
+\begin{DoxyParams}{Paramètres}
+{\em tab\+Spe} & Le tableau de spécialités \\
+\hline
+{\em nb\+Spe} & Le nombre de spécialités dans le tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le praticien connecté 
+\end{DoxyReturn}
+\Hypertarget{globalePraticien_8h_a279875b082bce485d666cc19e4845f50}\label{globalePraticien_8h_a279875b082bce485d666cc19e4845f50} 
+\index{globalePraticien.h@{globalePraticien.h}!supprimer1Patient@{supprimer1Patient}}
+\index{supprimer1Patient@{supprimer1Patient}!globalePraticien.h@{globalePraticien.h}}
+\doxysubsubsection{\texorpdfstring{supprimer1Patient()}{supprimer1Patient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPraticien}{Praticien}} supprimer1\+Patient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPraticien}{Praticien}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Supprime un patient d\textquotesingle{}un praticien. 
+
+La fonction demande le numéro de sécurité sociale du patient à supprimer. Si le patient est trouvé, il est supprimé de la liste des patients du praticien. Si le patient n\textquotesingle{}est pas trouvé, un message d\textquotesingle{}erreur est affiché. 
+\begin{DoxyParams}{Paramètres}
+{\em p} & Le praticien dont on veut supprimer le patient. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le praticien mis à jour. 
+\end{DoxyReturn}

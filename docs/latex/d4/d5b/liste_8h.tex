@@ -1,0 +1,231 @@
+\doxysection{Référence du fichier sources/liste.h}
+\hypertarget{liste_8h}{}\label{liste_8h}\index{sources/liste.h@{sources/liste.h}}
+
+
+Fonctions qui concernent les actions réalisées sur des listes de pointeurs sur des structures dynamiques.  
+
+
+{\ttfamily \#include "{}structures.\+h"{}}\newline
+Graphe des dépendances par inclusion de liste.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} \mbox{\hyperlink{liste_8h_a6cdd3fd961c240edc5c4139150d2f1a0}{liste\+Nouv}} (void)
+\begin{DoxyCompactList}\small\item\em Retourne une liste de praticien vide. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structures_8h_ae7d38601dfbd73adbe5c1b3ec34e0e13}{Boolean}} \mbox{\hyperlink{liste_8h_a063faba9bfc3052bd46e5e9012fbd29e}{liste\+Est\+Vide}} (\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} l)
+\begin{DoxyCompactList}\small\item\em Vérifie si une liste de praticien est vide. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} \mbox{\hyperlink{liste_8h_a26e917101ab62c85cf4d976485f38e2c}{ajout\+En\+Tete}} (\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} l, \mbox{\hyperlink{structPraticien}{Praticien}} p)
+\begin{DoxyCompactList}\small\item\em Ajoute un praticien en tête de liste. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} \mbox{\hyperlink{liste_8h_a841e7e9c9ac3a5da5e80a340d1ed81f0}{inserer}} (\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} l, \mbox{\hyperlink{structPraticien}{Praticien}} p)
+\begin{DoxyCompactList}\small\item\em Insertion d\textquotesingle{}un praticien dans une liste de praticiens. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} \mbox{\hyperlink{liste_8h_a6b7bc2446a020eb374e34a5ca9d46eb6}{supprimer\+Tete}} (\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} l)
+\begin{DoxyCompactList}\small\item\em Supprime le premier élément de la liste. Supprime le premier élément de la liste et libère la mémoire. Si la liste est vide, affiche un message d\textquotesingle{}erreur et quitte le programme. Si la liste ne contient qu\textquotesingle{}un élément, le supprime et libère la file de la mémoire. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} \mbox{\hyperlink{liste_8h_a8bf9d4810adfa33d62b5f418401ff060}{supprimer}} (\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} l, char \texorpdfstring{$\ast$}{*}nom)
+\begin{DoxyCompactList}\small\item\em Supprime un praticien de la liste. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} \mbox{\hyperlink{liste_8h_a06ab5fb8b906ce516f983900e8133ae4}{rechercher\+Praticien}} (\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} l, char \texorpdfstring{$\ast$}{*}nom)
+\begin{DoxyCompactList}\small\item\em Recherche un praticien dans la liste. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{liste_8h_a836b12ffb3daccb1a4a283c24d5dcd59}{afficher\+Liste}} (\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} l)
+\begin{DoxyCompactList}\small\item\em Affiche la liste de praticiens. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{liste_8h_adea4995dbedb85f0f93584d3c4199d8a}{longueur}} (\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} l)
+\begin{DoxyCompactList}\small\item\em Retourne la longueur d\textquotesingle{}une liste de praticiens. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{liste_8h_a299e4b057297b474cb83fd8ca892ea03}{recherche\+Praticien\+Place}} (\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} l, \mbox{\hyperlink{structPraticien}{Praticien}} \texorpdfstring{$\ast$}{*}tab\+PPlace)
+\begin{DoxyCompactList}\small\item\em Recherche praticiens qui ont de la place disponible. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonctions qui concernent les actions réalisées sur des listes de pointeurs sur des structures dynamiques. 
+
+\begin{DoxyAuthor}{Auteur}
+Elora LIAGRE , Ambre GUILLAUMIN-\/\+TORRES \& Shreya ANGIA 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Décembre 2025 -\/ Janvier 2026 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{liste_8h_a836b12ffb3daccb1a4a283c24d5dcd59}\label{liste_8h_a836b12ffb3daccb1a4a283c24d5dcd59} 
+\index{liste.h@{liste.h}!afficherListe@{afficherListe}}
+\index{afficherListe@{afficherListe}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{afficherListe()}{afficherListe()}}
+{\footnotesize\ttfamily void afficher\+Liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}}}]{l }\end{DoxyParamCaption})}
+
+
+
+Affiche la liste de praticiens. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em l} & Une liste de praticiens. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{liste_8h_a26e917101ab62c85cf4d976485f38e2c}\label{liste_8h_a26e917101ab62c85cf4d976485f38e2c} 
+\index{liste.h@{liste.h}!ajoutEnTete@{ajoutEnTete}}
+\index{ajoutEnTete@{ajoutEnTete}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{ajoutEnTete()}{ajoutEnTete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} ajout\+En\+Tete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}}}]{l,  }\item[{\mbox{\hyperlink{structPraticien}{Praticien}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Ajoute un praticien en tête de liste. 
+
+Alloue de la mémoire pour un maillon de liste, puis met à jour les pointeurs de tête et de queue de la liste en fonction de si la liste est vide ou non. 
+\begin{DoxyParams}{Paramètres}
+{\em l} & La liste dans laquelle on veut ajouter le praticien. \\
+\hline
+{\em p} & Le praticien à ajouter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La liste avec le praticien ajouté. 
+\end{DoxyReturn}
+\Hypertarget{liste_8h_a841e7e9c9ac3a5da5e80a340d1ed81f0}\label{liste_8h_a841e7e9c9ac3a5da5e80a340d1ed81f0} 
+\index{liste.h@{liste.h}!inserer@{inserer}}
+\index{inserer@{inserer}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{inserer()}{inserer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} inserer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}}}]{l,  }\item[{\mbox{\hyperlink{structPraticien}{Praticien}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Insertion d\textquotesingle{}un praticien dans une liste de praticiens. 
+
+Insertion d\textquotesingle{}un praticien dans une liste de praticiens en gardant la liste triée par ordre alphabétique. 
+\begin{DoxyParams}{Paramètres}
+{\em l} & La liste dans laquelle on veut ajouter le praticien. \\
+\hline
+{\em p} & Le praticien à ajouter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La liste avec le praticien ajouté. 
+\end{DoxyReturn}
+\Hypertarget{liste_8h_a063faba9bfc3052bd46e5e9012fbd29e}\label{liste_8h_a063faba9bfc3052bd46e5e9012fbd29e} 
+\index{liste.h@{liste.h}!listeEstVide@{listeEstVide}}
+\index{listeEstVide@{listeEstVide}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{listeEstVide()}{listeEstVide()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structures_8h_ae7d38601dfbd73adbe5c1b3ec34e0e13}{Boolean}} liste\+Est\+Vide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}}}]{l }\end{DoxyParamCaption})}
+
+
+
+Vérifie si une liste de praticien est vide. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em l} & La liste de praticien à vérifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+VRAI si la liste est vide, FAUX sinon. 
+\end{DoxyReturn}
+\Hypertarget{liste_8h_a6cdd3fd961c240edc5c4139150d2f1a0}\label{liste_8h_a6cdd3fd961c240edc5c4139150d2f1a0} 
+\index{liste.h@{liste.h}!listeNouv@{listeNouv}}
+\index{listeNouv@{listeNouv}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{listeNouv()}{listeNouv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} liste\+Nouv (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Retourne une liste de praticien vide. 
+
+\begin{DoxyReturn}{Renvoie}
+Une structure de type liste\+Praticiens initialisée à NULL. 
+\end{DoxyReturn}
+\Hypertarget{liste_8h_adea4995dbedb85f0f93584d3c4199d8a}\label{liste_8h_adea4995dbedb85f0f93584d3c4199d8a} 
+\index{liste.h@{liste.h}!longueur@{longueur}}
+\index{longueur@{longueur}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{longueur()}{longueur()}}
+{\footnotesize\ttfamily int longueur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}}}]{l }\end{DoxyParamCaption})}
+
+
+
+Retourne la longueur d\textquotesingle{}une liste de praticiens. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em l} & La liste de praticiens. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La longueur de la liste.
+\end{DoxyReturn}
+La longueur est définie comme le nombre de praticiens dans la liste. \Hypertarget{liste_8h_a299e4b057297b474cb83fd8ca892ea03}\label{liste_8h_a299e4b057297b474cb83fd8ca892ea03} 
+\index{liste.h@{liste.h}!recherchePraticienPlace@{recherchePraticienPlace}}
+\index{recherchePraticienPlace@{recherchePraticienPlace}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{recherchePraticienPlace()}{recherchePraticienPlace()}}
+{\footnotesize\ttfamily int recherche\+Praticien\+Place (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}}}]{l,  }\item[{\mbox{\hyperlink{structPraticien}{Praticien}} \texorpdfstring{$\ast$}{*}}]{tab\+PPlace }\end{DoxyParamCaption})}
+
+
+
+Recherche praticiens qui ont de la place disponible. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em l} & La liste des praticiens. \\
+\hline
+{\em tab\+PPlace} & Le tableau qui stocke les praticiens avec de la place disponible. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le nombre de praticiens trouvés. 
+\end{DoxyReturn}
+\Hypertarget{liste_8h_a06ab5fb8b906ce516f983900e8133ae4}\label{liste_8h_a06ab5fb8b906ce516f983900e8133ae4} 
+\index{liste.h@{liste.h}!rechercherPraticien@{rechercherPraticien}}
+\index{rechercherPraticien@{rechercherPraticien}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{rechercherPraticien()}{rechercherPraticien()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} rechercher\+Praticien (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}}}]{l,  }\item[{char \texorpdfstring{$\ast$}{*}}]{nom }\end{DoxyParamCaption})}
+
+
+
+Recherche un praticien dans la liste. 
+
+Recherche un praticien dans la liste et renvoie son pointeur. Si la liste est vide, renvoie NULL. Si le nom correspond, renvoie le pointeur du praticien. 
+\begin{DoxyParams}{Paramètres}
+{\em l} & La liste dont on veut rechercher le praticien. \\
+\hline
+{\em nom} & Le nom du praticien à rechercher. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le pointeur du praticien s\textquotesingle{}il est trouvé, NULL sinon. 
+\end{DoxyReturn}
+\Hypertarget{liste_8h_a8bf9d4810adfa33d62b5f418401ff060}\label{liste_8h_a8bf9d4810adfa33d62b5f418401ff060} 
+\index{liste.h@{liste.h}!supprimer@{supprimer}}
+\index{supprimer@{supprimer}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{supprimer()}{supprimer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} supprimer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}}}]{l,  }\item[{char \texorpdfstring{$\ast$}{*}}]{nom }\end{DoxyParamCaption})}
+
+
+
+Supprime un praticien de la liste. 
+
+Supprime un élément de la liste. Si la liste est vide, affiche un message d\textquotesingle{}erreur et quitte le programme. Si la liste ne contient qu\textquotesingle{}un élément, le supprime et libère la file de la mémoire. 
+\begin{DoxyParams}{Paramètres}
+{\em l} & La liste dont on veut supprimer le premier élément. \\
+\hline
+{\em nom} & Le nom du praticien à supprimer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La liste sans son élément si le nom correspond, la liste inchangée sinon. 
+\end{DoxyReturn}
+\Hypertarget{liste_8h_a6b7bc2446a020eb374e34a5ca9d46eb6}\label{liste_8h_a6b7bc2446a020eb374e34a5ca9d46eb6} 
+\index{liste.h@{liste.h}!supprimerTete@{supprimerTete}}
+\index{supprimerTete@{supprimerTete}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{supprimerTete()}{supprimerTete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} supprimer\+Tete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}}}]{l }\end{DoxyParamCaption})}
+
+
+
+Supprime le premier élément de la liste. Supprime le premier élément de la liste et libère la mémoire. Si la liste est vide, affiche un message d\textquotesingle{}erreur et quitte le programme. Si la liste ne contient qu\textquotesingle{}un élément, le supprime et libère la file de la mémoire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em l} & La liste dont on veut supprimer le premier élément. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La liste sans son premier élément. 
+\end{DoxyReturn}

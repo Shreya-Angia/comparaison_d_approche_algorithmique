@@ -1,0 +1,309 @@
+\doxysection{Référence du fichier sources/tableau.c}
+\hypertarget{tableau_8c}{}\label{tableau_8c}\index{sources/tableau.c@{sources/tableau.c}}
+
+
+Fonctions qui concernent les actions à réaliser sur des tableaux de pointeurs dynamique et static.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include "{}tableau.\+h"{}}\newline
+{\ttfamily \#include "{}affichage.\+h"{}}\newline
+Graphe des dépendances par inclusion de tableau.\+c\+:
+% FIG 0
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{tableau_8c_ac1fc9f7fe58e50cb9eecf60770a01e09}{ajouter\+Patient}} (\mbox{\hyperlink{structPraticien}{Praticien}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structpraticien}{praticien}}, \mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}pat)
+\begin{DoxyCompactList}\small\item\em Ajoute un patient au tableau des patients d\textquotesingle{}un praticien. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tableau_8c_a98452b9171c759dccc14b1b358d597f3}{supprimer\+Patient}} (\mbox{\hyperlink{structPraticien}{Praticien}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structpraticien}{praticien}}, int num\+Secu)
+\begin{DoxyCompactList}\small\item\em Supprime un patient d\textquotesingle{}un praticien. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{tableau_8c_a2e84164e195f00f41a690f2836146478}{ajouter\+Specialite}} (\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}s, \mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} \texorpdfstring{$\ast$}{*}p, \mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab, int \texorpdfstring{$\ast$}{*}nb, int \texorpdfstring{$\ast$}{*}max)
+\begin{DoxyCompactList}\small\item\em Ajoute une spécialité dans un tableau de spécialités. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{tableau_8c_abc3fa2b065461c3a6da555f2aeb8c423}{supprimer\+Specialte}} (\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}e, \mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} \texorpdfstring{$\ast$}{*}p, \mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab, int \texorpdfstring{$\ast$}{*}nb)
+\begin{DoxyCompactList}\small\item\em Supprime une spécialité d\textquotesingle{}un tableau de spécialités. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableau_8c_ac580ed49d365a11fa3f73d781e912c20}{copier}} (\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab, int i, int j, \mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}R)
+\begin{DoxyCompactList}\small\item\em Copie un deux tableau en un seul tableau de patients. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableau_8c_aebeb52ce09d8bbd4fa60cad2b72c5195}{fusion}} (\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}R, int nbR, \mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}S, int nbS, \mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab)
+\begin{DoxyCompactList}\small\item\em Fusion de deux tableau de patients. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableau_8c_a91e8fffacdeac5ecf4fe1b906683581b}{tri\+Lexicographique\+Patients}} (\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab, int nb)
+\begin{DoxyCompactList}\small\item\em Trie lexicographique des patients d\textquotesingle{}un tableau. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tableau_8c_a4731655b5b03c14595a124b81caa3675}{compare\+Date}} (\mbox{\hyperlink{structDate}{Date}} \texorpdfstring{$\ast$}{*}d1, \mbox{\hyperlink{structDate}{Date}} \texorpdfstring{$\ast$}{*}d2)
+\begin{DoxyCompactList}\small\item\em Compare deux dates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableau_8c_a60b7212ed580859cbc880051cb36b347}{quick\+Sort}} (\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab, int nb)
+\begin{DoxyCompactList}\small\item\em Tri des patients. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tableau_8c_a64d5bf06a5ef16fc31c4ffc1c9775591}{rechercher\+Spe}} (\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t\+Spe, char \texorpdfstring{$\ast$}{*}nom, int nb\+Spe)
+\begin{DoxyCompactList}\small\item\em Recherche dichotomique d\textquotesingle{}une specialité dans un tableau de pointeur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{tableau_8c_aa125e12d6888535c24bc017e65aa31dd}{trouver\+Patient}} (\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t\+Pat, char \texorpdfstring{$\ast$}{*}nom, int nb\+Pat)
+\begin{DoxyCompactList}\small\item\em Cherche un patient par son nom dans un tableau de patients. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tableau_8c_a239a652921cc47710a0401dd8eae93fd}{recherche\+Depuis\+Certain\+Tps}} (\mbox{\hyperlink{structDate}{Date}} d, \mbox{\hyperlink{structPraticien}{Praticien}} p, \mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab\+Rech)
+\begin{DoxyCompactList}\small\item\em Recherche les patients qui ne sont pas venus depuis une date donnée. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonctions qui concernent les actions à réaliser sur des tableaux de pointeurs dynamique et static. 
+
+\begin{DoxyAuthor}{Auteur}
+Elora LIAGRE , Ambre GUILLAUMIN-\/\+TORRES \& Shreya ANGIA 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Décembre 2025 -\/ Janvier 2026 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{tableau_8c_ac1fc9f7fe58e50cb9eecf60770a01e09}\label{tableau_8c_ac1fc9f7fe58e50cb9eecf60770a01e09} 
+\index{tableau.c@{tableau.c}!ajouterPatient@{ajouterPatient}}
+\index{ajouterPatient@{ajouterPatient}!tableau.c@{tableau.c}}
+\doxysubsubsection{\texorpdfstring{ajouterPatient()}{ajouterPatient()}}
+{\footnotesize\ttfamily int ajouter\+Patient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPraticien}{Praticien}} \texorpdfstring{$\ast$}{*}}]{praticien,  }\item[{\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}}]{pat }\end{DoxyParamCaption})}
+
+
+
+Ajoute un patient au tableau des patients d\textquotesingle{}un praticien. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em praticien} & Le praticien concerné \\
+\hline
+{\em pat} & Le patient à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si l\textquotesingle{}ajout est réussi, -\/1 si l\textquotesingle{}un des arguments est NULL, -\/2 si la réallocation du tableau échoue 
+\end{DoxyReturn}
+\Hypertarget{tableau_8c_a2e84164e195f00f41a690f2836146478}\label{tableau_8c_a2e84164e195f00f41a690f2836146478} 
+\index{tableau.c@{tableau.c}!ajouterSpecialite@{ajouterSpecialite}}
+\index{ajouterSpecialite@{ajouterSpecialite}!tableau.c@{tableau.c}}
+\doxysubsubsection{\texorpdfstring{ajouterSpecialite()}{ajouterSpecialite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} ajouter\+Specialite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}}]{s,  }\item[{\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} \texorpdfstring{$\ast$}{*}}]{p,  }\item[{\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab,  }\item[{int \texorpdfstring{$\ast$}{*}}]{nb,  }\item[{int \texorpdfstring{$\ast$}{*}}]{max }\end{DoxyParamCaption})}
+
+
+
+Ajoute une spécialité dans un tableau de spécialités. 
+
+La fonction insère la spécialité s dans le tableau tab en utilisant l\textquotesingle{}algorithme de recherche dichotomique. Si la spécialité existe déjà, elle n\textquotesingle{}est pas ajoutée. 
+\begin{DoxyParams}{Paramètres}
+{\em s} & La spécialité à ajouter. \\
+\hline
+{\em p} & La liste des praticiens associée à la spécialité. \\
+\hline
+{\em tab} & Le tableau de spécialités. \\
+\hline
+{\em nb} & Le nombre de spécialités dans le tableau. \\
+\hline
+{\em max} & La capacité maximale du tableau. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le tableau mis à jour. 
+\end{DoxyReturn}
+\Hypertarget{tableau_8c_a4731655b5b03c14595a124b81caa3675}\label{tableau_8c_a4731655b5b03c14595a124b81caa3675} 
+\index{tableau.c@{tableau.c}!compareDate@{compareDate}}
+\index{compareDate@{compareDate}!tableau.c@{tableau.c}}
+\doxysubsubsection{\texorpdfstring{compareDate()}{compareDate()}}
+{\footnotesize\ttfamily int compare\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDate}{Date}} \texorpdfstring{$\ast$}{*}}]{d1,  }\item[{\mbox{\hyperlink{structDate}{Date}} \texorpdfstring{$\ast$}{*}}]{d2 }\end{DoxyParamCaption})}
+
+
+
+Compare deux dates. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em d1} & Première date à comparer \\
+\hline
+{\em d2} & Deuxième date à comparer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+-\/1 si d1 est avant d2, 1 si d1 est après d2, 0 si d1 est égal à d2 
+\end{DoxyReturn}
+\Hypertarget{tableau_8c_ac580ed49d365a11fa3f73d781e912c20}\label{tableau_8c_ac580ed49d365a11fa3f73d781e912c20} 
+\index{tableau.c@{tableau.c}!copier@{copier}}
+\index{copier@{copier}!tableau.c@{tableau.c}}
+\doxysubsubsection{\texorpdfstring{copier()}{copier()}}
+{\footnotesize\ttfamily void copier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab,  }\item[{int}]{i,  }\item[{int}]{j,  }\item[{\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{R }\end{DoxyParamCaption})}
+
+
+
+Copie un deux tableau en un seul tableau de patients. 
+
+Copie les patients du tableau tab entre l\textquotesingle{}indice i et j (inclus) dans le tableau R. 
+\begin{DoxyParams}{Paramètres}
+{\em tab} & Le tableau de patients source. \\
+\hline
+{\em i} & L\textquotesingle{}indice de début de la copie. \\
+\hline
+{\em j} & L\textquotesingle{}indice de fin de la copie. \\
+\hline
+{\em R} & Le tableau de patients destination. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tableau_8c_aebeb52ce09d8bbd4fa60cad2b72c5195}\label{tableau_8c_aebeb52ce09d8bbd4fa60cad2b72c5195} 
+\index{tableau.c@{tableau.c}!fusion@{fusion}}
+\index{fusion@{fusion}!tableau.c@{tableau.c}}
+\doxysubsubsection{\texorpdfstring{fusion()}{fusion()}}
+{\footnotesize\ttfamily void fusion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{R,  }\item[{int}]{nbR,  }\item[{\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{S,  }\item[{int}]{nbS,  }\item[{\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab }\end{DoxyParamCaption})}
+
+
+
+Fusion de deux tableau de patients. 
+
+La fonction prend en paramètre deux tableau de patients R et S, ainsi que leurs tailles respectives nbR et nbS. Les patients sont fusionnés dans le tableau tab, en prenant soin de conserver l\textquotesingle{}ordre alphabétique. 
+\begin{DoxyParams}{Paramètres}
+{\em R} & Premier tableau de patients. \\
+\hline
+{\em nbR} & Taille du premier tableau. \\
+\hline
+{\em S} & Deuxième tableau de patients. \\
+\hline
+{\em nbS} & Taille du deuxième tableau. \\
+\hline
+{\em tab} & Tableau dans lequel on fusionne les patients. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tableau_8c_a60b7212ed580859cbc880051cb36b347}\label{tableau_8c_a60b7212ed580859cbc880051cb36b347} 
+\index{tableau.c@{tableau.c}!quickSort@{quickSort}}
+\index{quickSort@{quickSort}!tableau.c@{tableau.c}}
+\doxysubsubsection{\texorpdfstring{quickSort()}{quickSort()}}
+{\footnotesize\ttfamily void quick\+Sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab,  }\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+Tri des patients. 
+
+Tri les patients dans l\textquotesingle{}ordre de leur date de dernière visite 
+\begin{DoxyParams}{Paramètres}
+{\em tab} & Le tableau des patients \\
+\hline
+{\em nb} & Le nombre de patients dans le tableau \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tableau_8c_a239a652921cc47710a0401dd8eae93fd}\label{tableau_8c_a239a652921cc47710a0401dd8eae93fd} 
+\index{tableau.c@{tableau.c}!rechercheDepuisCertainTps@{rechercheDepuisCertainTps}}
+\index{rechercheDepuisCertainTps@{rechercheDepuisCertainTps}!tableau.c@{tableau.c}}
+\doxysubsubsection{\texorpdfstring{rechercheDepuisCertainTps()}{rechercheDepuisCertainTps()}}
+{\footnotesize\ttfamily int recherche\+Depuis\+Certain\+Tps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDate}{Date}}}]{d,  }\item[{\mbox{\hyperlink{structPraticien}{Praticien}}}]{p,  }\item[{\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab\+Rech }\end{DoxyParamCaption})}
+
+
+
+Recherche les patients qui ne sont pas venus depuis une date donnée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em d} & La date à partir de laquelle vérifier les absences \\
+\hline
+{\em p} & Le praticien concerné \\
+\hline
+{\em tab\+Rech} & Le tableau de patients qui ne sont pas venus depuis la date d \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le nombre de patients qui ne sont pas venus depuis la date d
+\end{DoxyReturn}
+Cette fonction parcourt la liste des patients d\textquotesingle{}un praticien et ajoute dans un tableau les patients qui ne sont pas venus depuis une date donnée. \Hypertarget{tableau_8c_a64d5bf06a5ef16fc31c4ffc1c9775591}\label{tableau_8c_a64d5bf06a5ef16fc31c4ffc1c9775591} 
+\index{tableau.c@{tableau.c}!rechercherSpe@{rechercherSpe}}
+\index{rechercherSpe@{rechercherSpe}!tableau.c@{tableau.c}}
+\doxysubsubsection{\texorpdfstring{rechercherSpe()}{rechercherSpe()}}
+{\footnotesize\ttfamily int rechercher\+Spe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{t\+Spe,  }\item[{char \texorpdfstring{$\ast$}{*}}]{nom,  }\item[{int}]{nb\+Spe }\end{DoxyParamCaption})}
+
+
+
+Recherche dichotomique d\textquotesingle{}une specialité dans un tableau de pointeur. 
+
+Recherche une spécialité dans un tableau de pointeur vers des spécialités. La recherche est faite en utilisant l\textquotesingle{}algorithme de recherche dichotomique. Si la spécialité est trouvée, la fonction renvoie l\textquotesingle{}indice de la spécialité dans le tableau. Sinon, la fonction renvoie -\/1. 
+\begin{DoxyParams}{Paramètres}
+{\em t\+Spe} & Le tableau de pointeur vers les spécialités. \\
+\hline
+{\em nom} & Le nom de la spécialité à rechercher. \\
+\hline
+{\em nb\+Spe} & Le nombre de spécialités dans le tableau. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}indice de la spécialité dans le tableau si elle est trouvée, -\/1 sinon. 
+\end{DoxyReturn}
+\Hypertarget{tableau_8c_a98452b9171c759dccc14b1b358d597f3}\label{tableau_8c_a98452b9171c759dccc14b1b358d597f3} 
+\index{tableau.c@{tableau.c}!supprimerPatient@{supprimerPatient}}
+\index{supprimerPatient@{supprimerPatient}!tableau.c@{tableau.c}}
+\doxysubsubsection{\texorpdfstring{supprimerPatient()}{supprimerPatient()}}
+{\footnotesize\ttfamily int supprimer\+Patient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPraticien}{Praticien}} \texorpdfstring{$\ast$}{*}}]{praticien,  }\item[{int}]{num\+Secu }\end{DoxyParamCaption})}
+
+
+
+Supprime un patient d\textquotesingle{}un praticien. 
+
+La fonction supprime le patient correspondant au numéro de sécurité sociale num\+Secu de la liste des patients du praticien. Si le patient n\textquotesingle{}existe pas, la fonction renvoie -\/2. 
+\begin{DoxyParams}{Paramètres}
+{\em praticien} & Le praticien concerné. \\
+\hline
+{\em num\+Secu} & Le numéro de sécurité sociale du patient à supprimer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si le patient est supprimé, -\/2 si le patient n\textquotesingle{}existe pas, -\/1 si le praticien est NULL. 
+\end{DoxyReturn}
+\Hypertarget{tableau_8c_abc3fa2b065461c3a6da555f2aeb8c423}\label{tableau_8c_abc3fa2b065461c3a6da555f2aeb8c423} 
+\index{tableau.c@{tableau.c}!supprimerSpecialte@{supprimerSpecialte}}
+\index{supprimerSpecialte@{supprimerSpecialte}!tableau.c@{tableau.c}}
+\doxysubsubsection{\texorpdfstring{supprimerSpecialte()}{supprimerSpecialte()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} supprimer\+Specialte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}}]{e,  }\item[{\mbox{\hyperlink{structures_8h_a3be7a949606cfbac44fc07db7e047728}{liste\+Praticiens}} \texorpdfstring{$\ast$}{*}}]{p,  }\item[{\mbox{\hyperlink{structSpecialite}{Specialite}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab,  }\item[{int \texorpdfstring{$\ast$}{*}}]{nb }\end{DoxyParamCaption})}
+
+
+
+Supprime une spécialité d\textquotesingle{}un tableau de spécialités. 
+
+La fonction supprime la spécialité e du tableau tab. Si la spécialité n\textquotesingle{}existe pas, le tableau reste inchangé. 
+\begin{DoxyParams}{Paramètres}
+{\em e} & La spécialité à supprimer. \\
+\hline
+{\em p} & La liste des praticiens associée à la spécialité. \\
+\hline
+{\em tab} & Le tableau de spécialités. \\
+\hline
+{\em nb} & Le nombre de spécialités dans le tableau. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le tableau mis à jour. 
+\end{DoxyReturn}
+\Hypertarget{tableau_8c_a91e8fffacdeac5ecf4fe1b906683581b}\label{tableau_8c_a91e8fffacdeac5ecf4fe1b906683581b} 
+\index{tableau.c@{tableau.c}!triLexicographiquePatients@{triLexicographiquePatients}}
+\index{triLexicographiquePatients@{triLexicographiquePatients}!tableau.c@{tableau.c}}
+\doxysubsubsection{\texorpdfstring{triLexicographiquePatients()}{triLexicographiquePatients()}}
+{\footnotesize\ttfamily void tri\+Lexicographique\+Patients (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab,  }\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+Trie lexicographique des patients d\textquotesingle{}un tableau. 
+
+Divise le tableau en deux parties, trie chaque partie récursivement, puis fusionne les deux parties triées pour obtenir le tableau trié. 
+\begin{DoxyParams}{Paramètres}
+{\em tab} & Le tableau de patients à trier. \\
+\hline
+{\em nb} & Le nombre de patients dans le tableau. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tableau_8c_aa125e12d6888535c24bc017e65aa31dd}\label{tableau_8c_aa125e12d6888535c24bc017e65aa31dd} 
+\index{tableau.c@{tableau.c}!trouverPatient@{trouverPatient}}
+\index{trouverPatient@{trouverPatient}!tableau.c@{tableau.c}}
+\doxysubsubsection{\texorpdfstring{trouverPatient()}{trouverPatient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*} trouver\+Patient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPatient}{Patient}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{t\+Pat,  }\item[{char \texorpdfstring{$\ast$}{*}}]{nom,  }\item[{int}]{nb\+Pat }\end{DoxyParamCaption})}
+
+
+
+Cherche un patient par son nom dans un tableau de patients. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t\+Pat} & Le tableau des patients \\
+\hline
+{\em nom} & Le nom du patient à chercher \\
+\hline
+{\em nb\+Pat} & Le nombre de patients dans le tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le patient trouvé s\textquotesingle{}il existe, NULL sinon 
+\end{DoxyReturn}
